@@ -1,0 +1,25 @@
+{
+  "name": "mem",
+  "displayName": "Memory Actions",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mem",
+      "aliases": ["Memory Actions", "mem"],
+      "extensions": [".mem"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mem",
+      "scopeName": "source.mem",
+      "path": "./syntaxes/mem.tmLanguage.json"
+    }]
+  }
+}
