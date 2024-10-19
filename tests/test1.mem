@@ -1,6 +1,6 @@
 # Asignación de memoria para diferentes variables
 ALLOC variable1 64
-ALLOC variable2 128
+ALLOC variable2Prueba 128
 
 # Reasignación de variable1 a un nuevo tamaño
 REALLOC variable1 128

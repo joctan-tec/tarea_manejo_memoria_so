@@ -9,5 +9,3 @@ struct MemoryBlock
     bool is_avalaible;
     MemoryBlock *next;
 };
-
-
