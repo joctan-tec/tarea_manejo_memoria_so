@@ -1,11 +1,12 @@
 # Asignación de memoria para diferentes variables
 ALLOC variable1 64
-ALLOC variable2Prueba 512
+ALLOC brenda 128
+
 # Reasignación de variable1 a un nuevo tamaño
 REALLOC variable1 128
 
 # Liberación de variable2
-FREE variable2.
+FREE variable2
 
 # Estado actual de las asignaciones
 PRINT
@@ -18,4 +19,3 @@ FREE variable1
 
 # Estado final de las asignaciones
 PRINT
-

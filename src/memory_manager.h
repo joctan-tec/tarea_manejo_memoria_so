@@ -1,11 +1,283 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "./hashmap.h"
 
-struct MemoryBlock
-{
-    void *memory;
-    size_t size;
-    bool is_avalaible;
-    MemoryBlock *next;
-};
+typedef struct MemoryBlock {
+    void* start_address;       // Dirección de inicio del bloque actual
+    size_t offset;             // Tamaño del bloque
+    int is_free;               // Estado del bloque (libre u ocupado)
+    struct MemoryBlock* next;  // Apunta al siguiente bloque en la lista
+} MemoryBlock;
+
+// Nueva estructura que contendrá la lista de bloques
+typedef struct {
+    MemoryBlock* head;  // Apunta al primer bloque
+    MemoryBlock* tail;  // Apunta al último bloque
+} MemoryList;
+
+MemoryBlock* create_block(void* start_address, size_t offset, int is_free) {
+    MemoryBlock* block = (MemoryBlock*)malloc(sizeof(MemoryBlock));
+    block->start_address = start_address;
+    block->offset = offset;
+    block->is_free = is_free;
+    block->next = NULL;
+    return block;
+}
+
+void add_block(MemoryList* list, void* start_address, size_t offset, int is_free) {
+    // Crear el nuevo bloque
+    MemoryBlock* new_block = create_block(start_address, offset, is_free);
+
+    // Si la lista está vacía, el nuevo bloque será el primero y el último
+    if (list->head == NULL) {
+        list->head = new_block;
+        list->tail = new_block;
+    } else {
+        // Enlazar el nuevo bloque al final de la lista
+        list->tail->next = new_block;
+        // Actualizar la referencia al último bloque
+        list->tail = new_block;
+    }
+}
+
+// Particiona la memoria en bloques pequeños de tamaño fijo = 32 bytes
+void partition_memory(unsigned char* memory, size_t total_memory_size, MemoryList* list) {
+    size_t block_size = 32;
+    size_t num_blocks = total_memory_size / block_size;
+
+    for (size_t i = 0; i < num_blocks; i++) {
+        unsigned char* block_address = memory + i * block_size;
+        add_block(list, block_address, block_size, 1);
+    }
+}
+
+// Obtiene el primer bloque libre de la lista
+MemoryBlock* get_free_block(MemoryList* list) {
+    MemoryBlock* current = list->head;
+
+    while (current != NULL) {
+        if (current->is_free) {
+            return current;
+        }
+        current = current->next;
+    }
+
+    return NULL;
+}
+
+// Devuelve el bloque que inicia en la dirección de memoria dada
+MemoryBlock* get_block_from_address(MemoryList* list, void* address) {
+    MemoryBlock* current = list->head;
+
+    while (current != NULL) {
+        if (current->start_address == address) {
+            return current;
+        }
+        current = current->next;
+    }
+
+    return NULL;
+}
+
+// Obtiene el primer bloque libre a partir de una dirección de memoria dada
+MemoryBlock* get_free_block_from_address(MemoryList memory_list ,void* address) {
+    MemoryBlock* current = get_block_from_address(&memory_list, address)->next;
+
+    while (current != NULL) {
+        if (current->is_free) {
+            return current;
+        }
+        current = current->next;
+    }
+
+    return NULL;
+}
+
+// Imprime el contenido de un bloque
+void print_block_content(MemoryBlock* block) {
+    printf("\nDirección de memoria\n");
+    printf("------------------------------------------------\n");
+
+    for (size_t i = 0; i < block->offset; i++) {
+        unsigned char* mem_address = (unsigned char*)block->start_address + i;
+        printf("| 0x%lx : 0x%lx | %02x ", 
+               (unsigned long)(mem_address), 
+               (unsigned long)(mem_address), 
+               *mem_address);
+
+        if (*mem_address >= 32 && *mem_address <= 126) {
+            printf("--> %c ", *mem_address);
+        } else {
+            printf("    ");
+        }
+        printf("|\n");
+    }
+    printf("------------------------------------------------\n");
+}
+
+void print_memory_blocks(MemoryList* list) {
+    MemoryBlock* current = list->head;
+    int index = 0;
+
+    while (current != NULL) {
+        printf("Bloque #%d\n", index);
+        print_block_content(current);
+        printf("\n");
+        current = current->next;
+        index++;
+    }
+}
+
+void print_memory_content(unsigned char* memory, size_t total_memory_size) {
+    printf("\nDirección de memoria\n");
+    printf("------------------------------------------------\n");
+
+    for (size_t i = 0; i < total_memory_size; i++) {
+        unsigned char* mem_address = memory + i;
+        printf("| 0x%lx : 0x%lx | %02x ", 
+               (unsigned long)(mem_address), 
+               (unsigned long)(mem_address), 
+               *mem_address);
+
+        if (*mem_address >= 32 && *mem_address <= 126) {
+            printf("--> %c ", *mem_address);
+        } else {
+            printf("    ");
+        }
+        printf("|\n");
+    }
+    printf("------------------------------------------------\n");
+}
+
+// Funcion para agregar contenido a un bloque de memoria
+void add_content_to_block(MemoryBlock* block, char* content) {
+    size_t content_length = strlen(content);
+    if (content_length > block->offset) {
+        printf("Error: El contenido no cabe en el bloque\n");
+        return;
+    }
+
+    for (size_t i = 0; i < content_length; i++) {
+        unsigned char* mem_address = (unsigned char*)block->start_address + i;
+        *mem_address = content[i];
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// Funcion para generar un char* con el contenido de un string, con la cantidad de bytes especificada
+char* generate_string(int size, char* varName) {
+    // Obtener la longitud de la cadena original
+    int varNameLength = strlen(varName);
+    
+    // Calcular cuántas veces necesitamos repetir la cadena
+    int repetitions = size / varNameLength;
+    int remainder = size % varNameLength;
+
+    // Reservar memoria para el nuevo string (tamaño total + 1 para el terminador nulo)
+    char* result = (char*)malloc(size + 1);
+    if (result == NULL) {
+        return NULL; // Manejo de error si malloc falla
+    }
+
+    // Llenar el nuevo string con las repeticiones
+    for (int i = 0; i < repetitions; i++) {
+        strcpy(result + (i * varNameLength), varName);
+    }
+    
+    // Copiar el resto de la cadena si es necesario
+    if (remainder > 0) {
+        strncpy(result + (repetitions * varNameLength), varName, remainder);
+    }
+    
+    // Asegurar que el string resultante esté terminado en nulo
+    result[size] = '\0';
+
+    return result;
+}
+
+// Limpiar la memoria de un bloque
+void clear_block(MemoryBlock* block) {
+    memset(block->start_address, 0, block->offset);
+}
+
+// Funcion para liberar un bloque de memoria
+void free_block(char* variable, MemoryList* memory_list, HashMap* assignments_map) {
+    // Obtener la dirección de memoria asignada a la variable
+    void* address = get_hashmap(assignments_map, variable);
+    if (address == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return;
+    }
+
+    // Obtener el bloque de memoria correspondiente
+    MemoryBlock* block = get_block_from_address(memory_list, address);
+    if (block == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return;
+    }
+
+    // Liberar el bloque
+    block->is_free = 1;
+    printf("Liberado %ld bytes en la dirección %p\n", block->offset, block->start_address);
+}
+
+// Funcion para buscar N bloques libres contiguos en la memoria
+MemoryBlock* find_free_blocks(int num_blocks, MemoryList* memory_list) {
+    MemoryBlock* current = memory_list->head;
+    MemoryBlock* start_block = NULL;
+    int count = 0;
+
+    while (current != NULL) {
+        if (current->is_free) {
+            if (count == 0) {
+                start_block = current;
+            }
+            count++;
+            if (count == num_blocks) {
+                return start_block;
+            }
+        } else {
+            count = 0;
+        }
+        current = current->next;
+    }
+
+    return NULL;
+}
+
+
+// Funcion para allocar memoria usando el algoritmo First-fit
+int first_fit_alloc(char* variable,int size, MemoryList* memory_list, HashMap* assignments_map) {
+    
+    //Cantidad de bloques necesarios
+    int num_blocks = size / 32;
+    if (size % 32 != 0) {
+        num_blocks++;
+    }
+    int char_size = size;
+    
+    // Buscar los bloques libres necesarios
+    MemoryBlock* start_block = find_free_blocks(num_blocks, memory_list);
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", size);
+        // Levantar error de memoria insuficiente
+        return 1;
+    }else{
+        // Marcar los bloques como ocupados
+        MemoryBlock* current = start_block;
+        for (int i = 0; i < num_blocks; i++) {
+            clear_block(current);
+            current->is_free = 0;
+            add_content_to_block(current, generate_string(char_size > 32 ? 32 : char_size, variable));
+            char_size -= 32;
+            hashmap_insert(assignments_map, variable, current->start_address);
+            current = current->next;
+        }
+        printf("Variable %s asignada correctamente\n", variable);
+        return 0;
+    }
+    return 0;
+    
+}

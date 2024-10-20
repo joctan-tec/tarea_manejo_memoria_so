@@ -203,3 +203,13 @@ void imprimirOperaciones(Operation *operaciones, int numOperaciones) {
         printf("\n");
     }
 }
+
+int main() {
+    int numOperaciones;
+    Operation *operaciones = leerArchivo("/home/joctan04/Documentos/TEC/Semestre_VII/Sistemas_Operativos/tarea_manejo_memoria_so/tests/test1.mem", &numOperaciones);
+    if (operaciones != NULL) {
+        imprimirOperaciones(operaciones, numOperaciones);
+        free(operaciones);
+    }
+    return 0;
+}

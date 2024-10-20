@@ -1,5 +1,5 @@
 # Asignación de memoria para diferentes variables
-ALLOC variable1 64
+ALLOC variable1 35
 ALLOC variable2 128
 
 # Reasignación de variable1 a un nuevo tamaño
