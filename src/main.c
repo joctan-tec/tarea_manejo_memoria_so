@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
 
     const char* nombreArchivo = argv[1];
     const char* algoritmo = argv[2];
+    
 
     // Verificar si el archivo de operaciones existe
     if (access(nombreArchivo, F_OK) == -1) {
@@ -81,6 +82,30 @@ int main(int argc, char *argv[]) {
                     free(operaciones);
                     return 1;
                 }
+            }else if (strcmp(algoritmo, "best_fit") == 0) {
+                int result = best_fit_alloc(op.varName, op.size, &memory_list, assignments_map);
+                if (result == 0) {
+                    printf("Variable %s asignada correctamente\n", op.varName);
+                } else {
+                    printf("Error al asignar la variable %s\n", op.varName);
+                    // Liberar toda la memoria y salir
+                    free_hashmap(assignments_map);
+                    free(memory);
+                    free(operaciones);
+                    return 1;
+                }
+            }else if (strcmp(algoritmo, "worst_fit") == 0) {
+                int result = worst_fit_alloc(op.varName, op.size, &memory_list, assignments_map);
+                if (result == 0) {
+                    printf("Variable %s asignada correctamente\n", op.varName);
+                } else {
+                    printf("Error al asignar la variable %s\n", op.varName);
+                    // Liberar toda la memoria y salir
+                    free_hashmap(assignments_map);
+                    free(memory);
+                    free(operaciones);
+                    return 1;
+                }
             }
 
 
@@ -89,44 +114,68 @@ int main(int argc, char *argv[]) {
         }else if(strcmp(op.operation, "REALLOC") == 0){
             printf("Operación: %s, Variable: %s, Tamaño: %d\n", op.operation, op.varName, op.size);
             
-            
-
+            if (strcmp(algoritmo, "first_fit") == 0) {
+                int result = first_fit_realloc(op.varName, op.size, &memory_list, assignments_map);
+                if (result == 0) {
+                    printf("Variable %s reasignada correctamente\n", op.varName);
+                } else {
+                    printf("Error al reasignar la variable %s\n", op.varName);
+                    // Liberar toda la memoria y salir
+                    free_hashmap(assignments_map);
+                    free(memory);
+                    free(operaciones);
+                    return 1;
+                }
+            }else if (strcmp(algoritmo, "best_fit") == 0) {
+                int result = best_fit_realloc(op.varName, op.size, &memory_list, assignments_map);
+                if (result == 0) {
+                    printf("Variable %s reasignada correctamente\n", op.varName);
+                } else {
+                    printf("Error al reasignar la variable %s\n", op.varName);
+                    // Liberar toda la memoria y salir
+                    free_hashmap(assignments_map);
+                    free(memory);
+                    free(operaciones);
+                    return 1;
+                }
+            }else if(strcmp(algoritmo, "worst_fit") == 0){
+                int result = worst_fit_realloc(op.varName, op.size, &memory_list, assignments_map);
+                if (result == 0) {
+                    printf("Variable %s reasignada correctamente\n", op.varName);
+                } else {
+                    printf("Error al reasignar la variable %s\n", op.varName);
+                    // Liberar toda la memoria y salir
+                    free_hashmap(assignments_map);
+                    free(memory);
+                    free(operaciones);
+                    return 1;
+                }
+            }
 
         }else if(strcmp(op.operation, "FREE") == 0){
             printf("Operación: %s, Variable: %s\n", op.operation, op.varName);
+            int result = free_memory(op.varName, &memory_list, assignments_map);
+            if (result == 0) {
+                printf("Variable %s liberada correctamente\n", op.varName);
+            } else {
+                printf("Error al liberar la variable %s\n", op.varName);
+                // Liberar toda la memoria y salir
+                free_hashmap(assignments_map);
+                free(memory);
+                free(operaciones);
+                return 1;
+            }
             
-            
-
-
-
         }else if(strcmp(op.operation, "PRINT") == 0){
             printf("Operación: %s\n", op.operation);
-            
-            
-
-
-
+            print_hashmap(assignments_map);
+            print_memory_blocks(&memory_list);
         }else{
             printf("Operación no válida\n");
         }
 
 
     }
-
-    print_hashmap(assignments_map);
-    print_memory_blocks(&memory_list);
-
-
-
-
-
-
-
-
-
-
-
-
 
     // Liberar la memoria reservada al final
     free(memory);

@@ -1,2 +1,0 @@
-Error en la línea 8: Error en FREE: La operación debe seguir el formato 'FREE <var>'.
-Línea: FREE variable2.

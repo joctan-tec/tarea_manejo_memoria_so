@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 #include "./hashmap.h"
 
 typedef struct MemoryBlock {
     void* start_address;       // Dirección de inicio del bloque actual
     size_t offset;             // Tamaño del bloque
-    int is_free;               // Estado del bloque (libre u ocupado)
+    int is_free;               // Estado del bloque (1 = libre, 0 = ocupado)
     struct MemoryBlock* next;  // Apunta al siguiente bloque en la lista
 } MemoryBlock;
 
@@ -65,6 +66,8 @@ MemoryBlock* get_free_block(MemoryList* list) {
 
     return NULL;
 }
+
+
 
 // Devuelve el bloque que inicia en la dirección de memoria dada
 MemoryBlock* get_block_from_address(MemoryList* list, void* address) {
@@ -197,6 +200,8 @@ char* generate_string(int size, char* varName) {
     return result;
 }
 
+
+
 // Limpiar la memoria de un bloque
 void clear_block(MemoryBlock* block) {
     memset(block->start_address, 0, block->offset);
@@ -247,37 +252,246 @@ MemoryBlock* find_free_blocks(int num_blocks, MemoryList* memory_list) {
     return NULL;
 }
 
+int get_num_blocks(int size){
+    int num_blocks = size / 32;
+    if (size % 32 != 0) {
+        num_blocks++;
+    }
+    return num_blocks;
+}
+
+int alloc_function(MemoryBlock* current, int num_blocks, int char_size, HashMap* assignments_map, char* variable){
+
+    // Valida que el current no sea NULL
+    if (current == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        return 1;
+    }
+
+    for (int i = 0; i < num_blocks; i++) {
+        clear_block(current);
+        current->is_free = 0;
+        add_content_to_block(current, generate_string(char_size > 32 ? 32 : char_size, variable));
+        char_size -= 32;
+        hashmap_insert(assignments_map, variable, current->start_address);
+        current = current->next;
+    }
+    printf("Variable %s asignada correctamente\n", variable);
+    return 0;
+}
+
 
 // Funcion para allocar memoria usando el algoritmo First-fit
 int first_fit_alloc(char* variable,int size, MemoryList* memory_list, HashMap* assignments_map) {
     
     //Cantidad de bloques necesarios
-    int num_blocks = size / 32;
-    if (size % 32 != 0) {
-        num_blocks++;
-    }
+    int num_blocks = get_num_blocks(size);
     int char_size = size;
     
     // Buscar los bloques libres necesarios
     MemoryBlock* start_block = find_free_blocks(num_blocks, memory_list);
-    if (start_block == NULL) {
-        printf("No se encontraron bloques libres contiguos para %d bytes\n", size);
-        // Levantar error de memoria insuficiente
-        return 1;
-    }else{
-        // Marcar los bloques como ocupados
-        MemoryBlock* current = start_block;
-        for (int i = 0; i < num_blocks; i++) {
-            clear_block(current);
-            current->is_free = 0;
-            add_content_to_block(current, generate_string(char_size > 32 ? 32 : char_size, variable));
-            char_size -= 32;
-            hashmap_insert(assignments_map, variable, current->start_address);
-            current = current->next;
-        }
-        printf("Variable %s asignada correctamente\n", variable);
-        return 0;
-    }
-    return 0;
-    
+    return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
+
+int first_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
+    // Obtener la dirección de memoria asignada a la variable
+    void* address = get_hashmap(assignments_map, variable);
+    print_hashmap(assignments_map);
+    if (address == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    
+    // Obtener el bloque de memoria correspondiente
+    MemoryBlock* block = get_block_from_address(memory_list, address);
+    printf("Block: %p\n", block);
+    if (block == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Liberar el bloque
+    block->is_free = 1;
+    // Liberar las direcciones de memoria asociadas a la variable
+    delete_from_hashmap(assignments_map, variable);
+    printf("Liberado %ld bytes en la dirección %p\n", block->offset, block->start_address);
+
+    //Cantidad de bloques necesarios
+    int num_blocks = get_num_blocks(size);
+    int char_size = size;
+    
+    // Buscar los bloques libres necesarios
+    MemoryBlock* start_block = find_free_blocks(num_blocks, memory_list);
+    return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
+}
+
+MemoryBlock* find_best_fit_blocks(int num_blocks, MemoryList* memory_list) {
+    MemoryBlock* current = memory_list->head;
+    MemoryBlock* best_fit_start = NULL;
+    int best_fit_size = INT_MAX;
+    
+    while (current != NULL) {
+        if (current->is_free) {
+            int count = 0;
+            MemoryBlock* temp = current;
+
+            // Contar bloques libres contiguos
+            while (temp != NULL && temp->is_free) {
+                count++;
+                temp = temp->next;
+            }
+
+            // Verificar si el bloque actual es el mejor ajuste
+            if (count >= num_blocks && count < best_fit_size) {
+                
+                best_fit_size = count;
+                best_fit_start = current;
+                
+            }
+        }
+        current = current->next;
+    }
+
+    printf("Best fit block: %p\n", best_fit_start->start_address);
+
+    return best_fit_start;
+}
+
+int best_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
+    // Obtener la dirección de memoria asignada a la variable
+    void* address = get_hashmap(assignments_map, variable);
+    if (address == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Obtener el bloque de memoria correspondiente
+    MemoryBlock* block = get_block_from_address(memory_list, address);
+    if (block == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Liberar el bloque
+    block->is_free = 1;
+    // Liberar las direcciones de memoria asociadas a la variable
+    delete_from_hashmap(assignments_map, variable);
+    printf("Liberado %ld bytes en la dirección %p\n", block->offset, block->start_address);
+
+    //Cantidad de bloques necesarios
+    int num_blocks = get_num_blocks(size);
+    int char_size = size;
+    
+    // Buscar los bloques libres necesarios
+    MemoryBlock* start_block = find_best_fit_blocks(num_blocks, memory_list);
+    return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
+}
+
+
+// Funcion para allocar memoria usando el algoritmo Best-fit
+int best_fit_alloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
+    
+    // Cantidad de bloques necesarios
+    int num_blocks = get_num_blocks(size);
+    int char_size = size;
+    // Buscar el mejor ajuste de bloques libres necesarios
+    MemoryBlock* start_block = find_best_fit_blocks(num_blocks, memory_list);
+    return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
+}
+
+
+MemoryBlock* find_worst_fit_blocks(int num_blocks, MemoryList* memory_list) {
+    MemoryBlock* current = memory_list->head;
+    MemoryBlock* worst_fit_start = NULL;
+    int worst_fit_size = 0;
+    
+    while (current != NULL) {
+        if (current->is_free) {
+            int count = 0;
+            MemoryBlock* temp = current;
+
+            // Contar bloques libres contiguos
+            while (temp != NULL && temp->is_free) {
+                count++;
+                temp = temp->next;
+            }
+
+            // Verificar si el bloque actual es el peor ajuste
+            if (count >= num_blocks && count > worst_fit_size) {
+                worst_fit_size = count;
+                worst_fit_start = current;
+            }
+        }
+        current = current->next;
+    }
+
+    printf("Worst fit block: %p\n", worst_fit_start->start_address);
+
+    return worst_fit_start;
+}
+
+// Funcion para allocar memoria usando el algoritmo Worst-fit
+int worst_fit_alloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
+    // Cantidad de bloques necesarios
+    int num_blocks = get_num_blocks(size);
+    int char_size = size;
+    // Buscar el peor ajuste de bloques libres necesarios
+    MemoryBlock* start_block = find_worst_fit_blocks(num_blocks, memory_list);
+    return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
+}
+
+
+int worst_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
+    // Obtener la dirección de memoria asignada a la variable
+    void* address = get_hashmap(assignments_map, variable);
+    if (address == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Obtener el bloque de memoria correspondiente
+    MemoryBlock* block = get_block_from_address(memory_list, address);
+    if (block == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Liberar el bloque
+    block->is_free = 1;
+    // Liberar las direcciones de memoria asociadas a la variable
+    delete_from_hashmap(assignments_map, variable);
+    printf("Liberado %ld bytes en la dirección %p\n", block->offset, block->start_address);
+
+    // Cantidad de bloques necesarios
+    int num_blocks = get_num_blocks(size);
+    int char_size = size;
+    // Buscar el peor ajuste de bloques libres necesarios
+    MemoryBlock* start_block = find_worst_fit_blocks(num_blocks, memory_list);
+    return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
+}
+
+int free_memory(char* variable, MemoryList* memory_list, HashMap* assignments_map) {
+    // Obtener la dirección de memoria asignada a la variable
+    void* address = get_hashmap(assignments_map, variable);
+    if (address == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Obtener el bloque de memoria correspondiente
+    MemoryBlock* block = get_block_from_address(memory_list, address);
+    if (block == NULL) {
+        printf("Variable %s no encontrada\n", variable);
+        return 1;
+    }
+
+    // Liberar el bloque
+    block->is_free = 1;
+    // Liberar las direcciones de memoria asociadas a la variable
+    delete_from_hashmap(assignments_map, variable);
+    printf("Liberado %ld bytes en la dirección %p\n", block->offset, block->start_address);
+    return 0;
+}
+

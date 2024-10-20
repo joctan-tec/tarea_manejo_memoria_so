@@ -113,3 +113,24 @@ AddressArray* get_hashmap(HashMap* map, const char* key) {
     }
     return NULL;
 }
+
+// Borra una clave del HashMap
+void delete_from_hashmap(HashMap* map, const char* key) {
+    KeyValuePair* current = map->head;
+    KeyValuePair* prev = NULL;
+    while (current != NULL) {
+        if (strcmp(current->key, key) == 0) {
+            if (prev == NULL) {
+                map->head = current->next;
+            } else {
+                prev->next = current->next;
+            }
+            free(current->key);
+            free(current->value.addresses);
+            free(current);
+            return;
+        }
+        prev = current;
+        current = current->next;
+    }
+}
