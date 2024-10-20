@@ -5,6 +5,8 @@ ALLOC variable2 128
 # Reasignación de variable1 a un nuevo tamaño
 REALLOC variable1 128
 
+ALLOC variable3 64
+
 # Liberación de variable2
 FREE variable2
 

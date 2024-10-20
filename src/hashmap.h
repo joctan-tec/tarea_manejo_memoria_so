@@ -89,6 +89,16 @@ void print_hashmap(HashMap* map) {
     }
 }
 
+// Imprime el contenido de una variable
+void print_variable(const char* key, AddressArray* addresses) {
+    printf("Clave: %s\n", key);
+    printf("Direcciones:\n");
+    for (size_t i = 0; i < addresses->count; i++) {
+        printf("  - 0x%lx\n", (unsigned long)addresses->addresses[i]);
+    }
+    printf("\n");
+}
+
 // Libera toda la memoria usada por el HashMap
 void free_hashmap(HashMap* map) {
     KeyValuePair* current = map->head;
