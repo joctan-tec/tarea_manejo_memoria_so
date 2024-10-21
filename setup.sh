@@ -1,0 +1,1 @@
+cp -r mem/ ~/.vscode/extensions/

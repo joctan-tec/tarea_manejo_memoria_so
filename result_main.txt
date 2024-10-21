@@ -1,0 +1,336 @@
+Algoritmo Seleccionado: worst_fit
+
+Memoria solicitada al sistema operativo: 128 bytes
+
+Operación: ALLOC, Variable: var1, Tamaño: 96
+Variable var1 asignada correctamente
+Variable var1 asignada correctamente
+Operación: PRINT
+Clave: var1
+Direcciones:
+  - 0x559e23edfd90
+  - 0x559e23edfdb0
+  - 0x559e23edfdd0
+
+Bloque #0 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfd90 : 0x559e23edfd90 | 76 --> v |
+| 0x559e23edfd91 : 0x559e23edfd91 | 61 --> a |
+| 0x559e23edfd92 : 0x559e23edfd92 | 72 --> r |
+| 0x559e23edfd93 : 0x559e23edfd93 | 31 --> 1 |
+| 0x559e23edfd94 : 0x559e23edfd94 | 76 --> v |
+| 0x559e23edfd95 : 0x559e23edfd95 | 61 --> a |
+| 0x559e23edfd96 : 0x559e23edfd96 | 72 --> r |
+| 0x559e23edfd97 : 0x559e23edfd97 | 31 --> 1 |
+| 0x559e23edfd98 : 0x559e23edfd98 | 76 --> v |
+| 0x559e23edfd99 : 0x559e23edfd99 | 61 --> a |
+| 0x559e23edfd9a : 0x559e23edfd9a | 72 --> r |
+| 0x559e23edfd9b : 0x559e23edfd9b | 31 --> 1 |
+| 0x559e23edfd9c : 0x559e23edfd9c | 76 --> v |
+| 0x559e23edfd9d : 0x559e23edfd9d | 61 --> a |
+| 0x559e23edfd9e : 0x559e23edfd9e | 72 --> r |
+| 0x559e23edfd9f : 0x559e23edfd9f | 31 --> 1 |
+| 0x559e23edfda0 : 0x559e23edfda0 | 76 --> v |
+| 0x559e23edfda1 : 0x559e23edfda1 | 61 --> a |
+| 0x559e23edfda2 : 0x559e23edfda2 | 72 --> r |
+| 0x559e23edfda3 : 0x559e23edfda3 | 31 --> 1 |
+| 0x559e23edfda4 : 0x559e23edfda4 | 76 --> v |
+| 0x559e23edfda5 : 0x559e23edfda5 | 61 --> a |
+| 0x559e23edfda6 : 0x559e23edfda6 | 72 --> r |
+| 0x559e23edfda7 : 0x559e23edfda7 | 31 --> 1 |
+| 0x559e23edfda8 : 0x559e23edfda8 | 76 --> v |
+| 0x559e23edfda9 : 0x559e23edfda9 | 61 --> a |
+| 0x559e23edfdaa : 0x559e23edfdaa | 72 --> r |
+| 0x559e23edfdab : 0x559e23edfdab | 31 --> 1 |
+| 0x559e23edfdac : 0x559e23edfdac | 76 --> v |
+| 0x559e23edfdad : 0x559e23edfdad | 61 --> a |
+| 0x559e23edfdae : 0x559e23edfdae | 72 --> r |
+| 0x559e23edfdaf : 0x559e23edfdaf | 31 --> 1 |
+------------------------------------------------
+
+Bloque #1 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfdb0 : 0x559e23edfdb0 | 76 --> v |
+| 0x559e23edfdb1 : 0x559e23edfdb1 | 61 --> a |
+| 0x559e23edfdb2 : 0x559e23edfdb2 | 72 --> r |
+| 0x559e23edfdb3 : 0x559e23edfdb3 | 31 --> 1 |
+| 0x559e23edfdb4 : 0x559e23edfdb4 | 76 --> v |
+| 0x559e23edfdb5 : 0x559e23edfdb5 | 61 --> a |
+| 0x559e23edfdb6 : 0x559e23edfdb6 | 72 --> r |
+| 0x559e23edfdb7 : 0x559e23edfdb7 | 31 --> 1 |
+| 0x559e23edfdb8 : 0x559e23edfdb8 | 76 --> v |
+| 0x559e23edfdb9 : 0x559e23edfdb9 | 61 --> a |
+| 0x559e23edfdba : 0x559e23edfdba | 72 --> r |
+| 0x559e23edfdbb : 0x559e23edfdbb | 31 --> 1 |
+| 0x559e23edfdbc : 0x559e23edfdbc | 76 --> v |
+| 0x559e23edfdbd : 0x559e23edfdbd | 61 --> a |
+| 0x559e23edfdbe : 0x559e23edfdbe | 72 --> r |
+| 0x559e23edfdbf : 0x559e23edfdbf | 31 --> 1 |
+| 0x559e23edfdc0 : 0x559e23edfdc0 | 76 --> v |
+| 0x559e23edfdc1 : 0x559e23edfdc1 | 61 --> a |
+| 0x559e23edfdc2 : 0x559e23edfdc2 | 72 --> r |
+| 0x559e23edfdc3 : 0x559e23edfdc3 | 31 --> 1 |
+| 0x559e23edfdc4 : 0x559e23edfdc4 | 76 --> v |
+| 0x559e23edfdc5 : 0x559e23edfdc5 | 61 --> a |
+| 0x559e23edfdc6 : 0x559e23edfdc6 | 72 --> r |
+| 0x559e23edfdc7 : 0x559e23edfdc7 | 31 --> 1 |
+| 0x559e23edfdc8 : 0x559e23edfdc8 | 76 --> v |
+| 0x559e23edfdc9 : 0x559e23edfdc9 | 61 --> a |
+| 0x559e23edfdca : 0x559e23edfdca | 72 --> r |
+| 0x559e23edfdcb : 0x559e23edfdcb | 31 --> 1 |
+| 0x559e23edfdcc : 0x559e23edfdcc | 76 --> v |
+| 0x559e23edfdcd : 0x559e23edfdcd | 61 --> a |
+| 0x559e23edfdce : 0x559e23edfdce | 72 --> r |
+| 0x559e23edfdcf : 0x559e23edfdcf | 31 --> 1 |
+------------------------------------------------
+
+Bloque #2 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfdd0 : 0x559e23edfdd0 | 76 --> v |
+| 0x559e23edfdd1 : 0x559e23edfdd1 | 61 --> a |
+| 0x559e23edfdd2 : 0x559e23edfdd2 | 72 --> r |
+| 0x559e23edfdd3 : 0x559e23edfdd3 | 31 --> 1 |
+| 0x559e23edfdd4 : 0x559e23edfdd4 | 76 --> v |
+| 0x559e23edfdd5 : 0x559e23edfdd5 | 61 --> a |
+| 0x559e23edfdd6 : 0x559e23edfdd6 | 72 --> r |
+| 0x559e23edfdd7 : 0x559e23edfdd7 | 31 --> 1 |
+| 0x559e23edfdd8 : 0x559e23edfdd8 | 76 --> v |
+| 0x559e23edfdd9 : 0x559e23edfdd9 | 61 --> a |
+| 0x559e23edfdda : 0x559e23edfdda | 72 --> r |
+| 0x559e23edfddb : 0x559e23edfddb | 31 --> 1 |
+| 0x559e23edfddc : 0x559e23edfddc | 76 --> v |
+| 0x559e23edfddd : 0x559e23edfddd | 61 --> a |
+| 0x559e23edfdde : 0x559e23edfdde | 72 --> r |
+| 0x559e23edfddf : 0x559e23edfddf | 31 --> 1 |
+| 0x559e23edfde0 : 0x559e23edfde0 | 76 --> v |
+| 0x559e23edfde1 : 0x559e23edfde1 | 61 --> a |
+| 0x559e23edfde2 : 0x559e23edfde2 | 72 --> r |
+| 0x559e23edfde3 : 0x559e23edfde3 | 31 --> 1 |
+| 0x559e23edfde4 : 0x559e23edfde4 | 76 --> v |
+| 0x559e23edfde5 : 0x559e23edfde5 | 61 --> a |
+| 0x559e23edfde6 : 0x559e23edfde6 | 72 --> r |
+| 0x559e23edfde7 : 0x559e23edfde7 | 31 --> 1 |
+| 0x559e23edfde8 : 0x559e23edfde8 | 76 --> v |
+| 0x559e23edfde9 : 0x559e23edfde9 | 61 --> a |
+| 0x559e23edfdea : 0x559e23edfdea | 72 --> r |
+| 0x559e23edfdeb : 0x559e23edfdeb | 31 --> 1 |
+| 0x559e23edfdec : 0x559e23edfdec | 76 --> v |
+| 0x559e23edfded : 0x559e23edfded | 61 --> a |
+| 0x559e23edfdee : 0x559e23edfdee | 72 --> r |
+| 0x559e23edfdef : 0x559e23edfdef | 31 --> 1 |
+------------------------------------------------
+
+Bloque #3 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfdf0 : 0x559e23edfdf0 | b0     |
+| 0x559e23edfdf1 : 0x559e23edfdf1 | 1a     |
+| 0x559e23edfdf2 : 0x559e23edfdf2 | ee     |
+| 0x559e23edfdf3 : 0x559e23edfdf3 | 23 --> # |
+| 0x559e23edfdf4 : 0x559e23edfdf4 | 9e     |
+| 0x559e23edfdf5 : 0x559e23edfdf5 | 55 --> U |
+| 0x559e23edfdf6 : 0x559e23edfdf6 | 00     |
+| 0x559e23edfdf7 : 0x559e23edfdf7 | 00     |
+| 0x559e23edfdf8 : 0x559e23edfdf8 | c0     |
+| 0x559e23edfdf9 : 0x559e23edfdf9 | f1     |
+| 0x559e23edfdfa : 0x559e23edfdfa | ed     |
+| 0x559e23edfdfb : 0x559e23edfdfb | 23 --> # |
+| 0x559e23edfdfc : 0x559e23edfdfc | 9e     |
+| 0x559e23edfdfd : 0x559e23edfdfd | 55 --> U |
+| 0x559e23edfdfe : 0x559e23edfdfe | 00     |
+| 0x559e23edfdff : 0x559e23edfdff | 00     |
+| 0x559e23edfe00 : 0x559e23edfe00 | 00     |
+| 0x559e23edfe01 : 0x559e23edfe01 | 00     |
+| 0x559e23edfe02 : 0x559e23edfe02 | 00     |
+| 0x559e23edfe03 : 0x559e23edfe03 | 00     |
+| 0x559e23edfe04 : 0x559e23edfe04 | 00     |
+| 0x559e23edfe05 : 0x559e23edfe05 | 00     |
+| 0x559e23edfe06 : 0x559e23edfe06 | 00     |
+| 0x559e23edfe07 : 0x559e23edfe07 | 00     |
+| 0x559e23edfe08 : 0x559e23edfe08 | 00     |
+| 0x559e23edfe09 : 0x559e23edfe09 | 00     |
+| 0x559e23edfe0a : 0x559e23edfe0a | 00     |
+| 0x559e23edfe0b : 0x559e23edfe0b | 00     |
+| 0x559e23edfe0c : 0x559e23edfe0c | 00     |
+| 0x559e23edfe0d : 0x559e23edfe0d | 00     |
+| 0x559e23edfe0e : 0x559e23edfe0e | 00     |
+| 0x559e23edfe0f : 0x559e23edfe0f | 00     |
+------------------------------------------------
+
+Operación: ALLOC, Variable: var2, Tamaño: 10
+Variable var2 asignada correctamente
+Variable var2 asignada correctamente
+Operación: PRINT
+Clave: var2
+Direcciones:
+  - 0x559e23edfdf0
+
+Clave: var1
+Direcciones:
+  - 0x559e23edfd90
+  - 0x559e23edfdb0
+  - 0x559e23edfdd0
+
+Bloque #0 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfd90 : 0x559e23edfd90 | 76 --> v |
+| 0x559e23edfd91 : 0x559e23edfd91 | 61 --> a |
+| 0x559e23edfd92 : 0x559e23edfd92 | 72 --> r |
+| 0x559e23edfd93 : 0x559e23edfd93 | 31 --> 1 |
+| 0x559e23edfd94 : 0x559e23edfd94 | 76 --> v |
+| 0x559e23edfd95 : 0x559e23edfd95 | 61 --> a |
+| 0x559e23edfd96 : 0x559e23edfd96 | 72 --> r |
+| 0x559e23edfd97 : 0x559e23edfd97 | 31 --> 1 |
+| 0x559e23edfd98 : 0x559e23edfd98 | 76 --> v |
+| 0x559e23edfd99 : 0x559e23edfd99 | 61 --> a |
+| 0x559e23edfd9a : 0x559e23edfd9a | 72 --> r |
+| 0x559e23edfd9b : 0x559e23edfd9b | 31 --> 1 |
+| 0x559e23edfd9c : 0x559e23edfd9c | 76 --> v |
+| 0x559e23edfd9d : 0x559e23edfd9d | 61 --> a |
+| 0x559e23edfd9e : 0x559e23edfd9e | 72 --> r |
+| 0x559e23edfd9f : 0x559e23edfd9f | 31 --> 1 |
+| 0x559e23edfda0 : 0x559e23edfda0 | 76 --> v |
+| 0x559e23edfda1 : 0x559e23edfda1 | 61 --> a |
+| 0x559e23edfda2 : 0x559e23edfda2 | 72 --> r |
+| 0x559e23edfda3 : 0x559e23edfda3 | 31 --> 1 |
+| 0x559e23edfda4 : 0x559e23edfda4 | 76 --> v |
+| 0x559e23edfda5 : 0x559e23edfda5 | 61 --> a |
+| 0x559e23edfda6 : 0x559e23edfda6 | 72 --> r |
+| 0x559e23edfda7 : 0x559e23edfda7 | 31 --> 1 |
+| 0x559e23edfda8 : 0x559e23edfda8 | 76 --> v |
+| 0x559e23edfda9 : 0x559e23edfda9 | 61 --> a |
+| 0x559e23edfdaa : 0x559e23edfdaa | 72 --> r |
+| 0x559e23edfdab : 0x559e23edfdab | 31 --> 1 |
+| 0x559e23edfdac : 0x559e23edfdac | 76 --> v |
+| 0x559e23edfdad : 0x559e23edfdad | 61 --> a |
+| 0x559e23edfdae : 0x559e23edfdae | 72 --> r |
+| 0x559e23edfdaf : 0x559e23edfdaf | 31 --> 1 |
+------------------------------------------------
+
+Bloque #1 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfdb0 : 0x559e23edfdb0 | 76 --> v |
+| 0x559e23edfdb1 : 0x559e23edfdb1 | 61 --> a |
+| 0x559e23edfdb2 : 0x559e23edfdb2 | 72 --> r |
+| 0x559e23edfdb3 : 0x559e23edfdb3 | 31 --> 1 |
+| 0x559e23edfdb4 : 0x559e23edfdb4 | 76 --> v |
+| 0x559e23edfdb5 : 0x559e23edfdb5 | 61 --> a |
+| 0x559e23edfdb6 : 0x559e23edfdb6 | 72 --> r |
+| 0x559e23edfdb7 : 0x559e23edfdb7 | 31 --> 1 |
+| 0x559e23edfdb8 : 0x559e23edfdb8 | 76 --> v |
+| 0x559e23edfdb9 : 0x559e23edfdb9 | 61 --> a |
+| 0x559e23edfdba : 0x559e23edfdba | 72 --> r |
+| 0x559e23edfdbb : 0x559e23edfdbb | 31 --> 1 |
+| 0x559e23edfdbc : 0x559e23edfdbc | 76 --> v |
+| 0x559e23edfdbd : 0x559e23edfdbd | 61 --> a |
+| 0x559e23edfdbe : 0x559e23edfdbe | 72 --> r |
+| 0x559e23edfdbf : 0x559e23edfdbf | 31 --> 1 |
+| 0x559e23edfdc0 : 0x559e23edfdc0 | 76 --> v |
+| 0x559e23edfdc1 : 0x559e23edfdc1 | 61 --> a |
+| 0x559e23edfdc2 : 0x559e23edfdc2 | 72 --> r |
+| 0x559e23edfdc3 : 0x559e23edfdc3 | 31 --> 1 |
+| 0x559e23edfdc4 : 0x559e23edfdc4 | 76 --> v |
+| 0x559e23edfdc5 : 0x559e23edfdc5 | 61 --> a |
+| 0x559e23edfdc6 : 0x559e23edfdc6 | 72 --> r |
+| 0x559e23edfdc7 : 0x559e23edfdc7 | 31 --> 1 |
+| 0x559e23edfdc8 : 0x559e23edfdc8 | 76 --> v |
+| 0x559e23edfdc9 : 0x559e23edfdc9 | 61 --> a |
+| 0x559e23edfdca : 0x559e23edfdca | 72 --> r |
+| 0x559e23edfdcb : 0x559e23edfdcb | 31 --> 1 |
+| 0x559e23edfdcc : 0x559e23edfdcc | 76 --> v |
+| 0x559e23edfdcd : 0x559e23edfdcd | 61 --> a |
+| 0x559e23edfdce : 0x559e23edfdce | 72 --> r |
+| 0x559e23edfdcf : 0x559e23edfdcf | 31 --> 1 |
+------------------------------------------------
+
+Bloque #2 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfdd0 : 0x559e23edfdd0 | 76 --> v |
+| 0x559e23edfdd1 : 0x559e23edfdd1 | 61 --> a |
+| 0x559e23edfdd2 : 0x559e23edfdd2 | 72 --> r |
+| 0x559e23edfdd3 : 0x559e23edfdd3 | 31 --> 1 |
+| 0x559e23edfdd4 : 0x559e23edfdd4 | 76 --> v |
+| 0x559e23edfdd5 : 0x559e23edfdd5 | 61 --> a |
+| 0x559e23edfdd6 : 0x559e23edfdd6 | 72 --> r |
+| 0x559e23edfdd7 : 0x559e23edfdd7 | 31 --> 1 |
+| 0x559e23edfdd8 : 0x559e23edfdd8 | 76 --> v |
+| 0x559e23edfdd9 : 0x559e23edfdd9 | 61 --> a |
+| 0x559e23edfdda : 0x559e23edfdda | 72 --> r |
+| 0x559e23edfddb : 0x559e23edfddb | 31 --> 1 |
+| 0x559e23edfddc : 0x559e23edfddc | 76 --> v |
+| 0x559e23edfddd : 0x559e23edfddd | 61 --> a |
+| 0x559e23edfdde : 0x559e23edfdde | 72 --> r |
+| 0x559e23edfddf : 0x559e23edfddf | 31 --> 1 |
+| 0x559e23edfde0 : 0x559e23edfde0 | 76 --> v |
+| 0x559e23edfde1 : 0x559e23edfde1 | 61 --> a |
+| 0x559e23edfde2 : 0x559e23edfde2 | 72 --> r |
+| 0x559e23edfde3 : 0x559e23edfde3 | 31 --> 1 |
+| 0x559e23edfde4 : 0x559e23edfde4 | 76 --> v |
+| 0x559e23edfde5 : 0x559e23edfde5 | 61 --> a |
+| 0x559e23edfde6 : 0x559e23edfde6 | 72 --> r |
+| 0x559e23edfde7 : 0x559e23edfde7 | 31 --> 1 |
+| 0x559e23edfde8 : 0x559e23edfde8 | 76 --> v |
+| 0x559e23edfde9 : 0x559e23edfde9 | 61 --> a |
+| 0x559e23edfdea : 0x559e23edfdea | 72 --> r |
+| 0x559e23edfdeb : 0x559e23edfdeb | 31 --> 1 |
+| 0x559e23edfdec : 0x559e23edfdec | 76 --> v |
+| 0x559e23edfded : 0x559e23edfded | 61 --> a |
+| 0x559e23edfdee : 0x559e23edfdee | 72 --> r |
+| 0x559e23edfdef : 0x559e23edfdef | 31 --> 1 |
+------------------------------------------------
+
+Bloque #3 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x559e23edfdf0 : 0x559e23edfdf0 | 76 --> v |
+| 0x559e23edfdf1 : 0x559e23edfdf1 | 61 --> a |
+| 0x559e23edfdf2 : 0x559e23edfdf2 | 72 --> r |
+| 0x559e23edfdf3 : 0x559e23edfdf3 | 32 --> 2 |
+| 0x559e23edfdf4 : 0x559e23edfdf4 | 76 --> v |
+| 0x559e23edfdf5 : 0x559e23edfdf5 | 61 --> a |
+| 0x559e23edfdf6 : 0x559e23edfdf6 | 72 --> r |
+| 0x559e23edfdf7 : 0x559e23edfdf7 | 32 --> 2 |
+| 0x559e23edfdf8 : 0x559e23edfdf8 | 76 --> v |
+| 0x559e23edfdf9 : 0x559e23edfdf9 | 61 --> a |
+| 0x559e23edfdfa : 0x559e23edfdfa | 00     |
+| 0x559e23edfdfb : 0x559e23edfdfb | 00     |
+| 0x559e23edfdfc : 0x559e23edfdfc | 00     |
+| 0x559e23edfdfd : 0x559e23edfdfd | 00     |
+| 0x559e23edfdfe : 0x559e23edfdfe | 00     |
+| 0x559e23edfdff : 0x559e23edfdff | 00     |
+| 0x559e23edfe00 : 0x559e23edfe00 | 00     |
+| 0x559e23edfe01 : 0x559e23edfe01 | 00     |
+| 0x559e23edfe02 : 0x559e23edfe02 | 00     |
+| 0x559e23edfe03 : 0x559e23edfe03 | 00     |
+| 0x559e23edfe04 : 0x559e23edfe04 | 00     |
+| 0x559e23edfe05 : 0x559e23edfe05 | 00     |
+| 0x559e23edfe06 : 0x559e23edfe06 | 00     |
+| 0x559e23edfe07 : 0x559e23edfe07 | 00     |
+| 0x559e23edfe08 : 0x559e23edfe08 | 00     |
+| 0x559e23edfe09 : 0x559e23edfe09 | 00     |
+| 0x559e23edfe0a : 0x559e23edfe0a | 00     |
+| 0x559e23edfe0b : 0x559e23edfe0b | 00     |
+| 0x559e23edfe0c : 0x559e23edfe0c | 00     |
+| 0x559e23edfe0d : 0x559e23edfe0d | 00     |
+| 0x559e23edfe0e : 0x559e23edfe0e | 00     |
+| 0x559e23edfe0f : 0x559e23edfe0f | 00     |
+------------------------------------------------
+
+Operación: ALLOC, Variable: var3, Tamaño: 10
+No se encontraron bloques libres contiguos para 10 bytes
+Error: Memoria insuficiente
+Error al asignar la variable var3

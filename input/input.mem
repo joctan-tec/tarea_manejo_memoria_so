@@ -1,0 +1,23 @@
+# Asignación de memoria para diferentes variables
+ALLOC var1 96
+
+PRINT
+
+ALLOC var2 10
+
+PRINT
+
+ALLOC var3 10
+
+FREE var1
+
+REALLOC var3 64
+
+PRINT
+
+ALLOC var4 10
+
+
+
+
+PRINT

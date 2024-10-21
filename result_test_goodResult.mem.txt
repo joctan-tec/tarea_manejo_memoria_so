@@ -1,0 +1,1281 @@
+Algoritmo Seleccionado: best_fit
+
+Memoria solicitada al sistema operativo: 512 bytes
+
+Operación: ALLOC, Variable: variable1, Tamaño: 35
+Best fit block: 0x5ea90ab23170
+Variable variable1 asignada correctamente
+Variable variable1 asignada correctamente
+Operación: ALLOC, Variable: variable2, Tamaño: 128
+Best fit block: 0x5ea90ab230f0
+Variable variable2 asignada correctamente
+Variable variable2 asignada correctamente
+Operación: REALLOC, Variable: variable1, Tamaño: 128
+Liberado 32 bytes en la dirección 0x5ea90ab23170
+Liberado 32 bytes en la dirección 0x5ea90ab23190
+Best fit block: 0x5ea90ab23070
+Variable variable1 asignada correctamente
+Variable variable1 reasignada correctamente
+Operación: ALLOC, Variable: variable3, Tamaño: 64
+Best fit block: 0x5ea90ab23030
+Variable variable3 asignada correctamente
+Variable variable3 asignada correctamente
+Operación: FREE, Variable: variable2
+Liberado 32 bytes en la dirección 0x5ea90ab230f0
+Liberado 32 bytes en la dirección 0x5ea90ab23110
+Liberado 32 bytes en la dirección 0x5ea90ab23130
+Liberado 32 bytes en la dirección 0x5ea90ab23150
+Variable variable2 liberada correctamente
+Operación: PRINT
+Clave: variable3
+Direcciones:
+  - 0x5ea90ab23030
+  - 0x5ea90ab23050
+
+Clave: variable1
+Direcciones:
+  - 0x5ea90ab23070
+  - 0x5ea90ab23090
+  - 0x5ea90ab230b0
+  - 0x5ea90ab230d0
+
+Bloque #0 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab22fb0 : 0x5ea90ab22fb0 | 82     |
+| 0x5ea90ab22fb1 : 0x5ea90ab22fb1 | 86     |
+| 0x5ea90ab22fb2 : 0x5ea90ab22fb2 | 22 --> " |
+| 0x5ea90ab22fb3 : 0x5ea90ab22fb3 | e0     |
+| 0x5ea90ab22fb4 : 0x5ea90ab22fb4 | ac     |
+| 0x5ea90ab22fb5 : 0x5ea90ab22fb5 | 5e --> ^ |
+| 0x5ea90ab22fb6 : 0x5ea90ab22fb6 | 00     |
+| 0x5ea90ab22fb7 : 0x5ea90ab22fb7 | 00     |
+| 0x5ea90ab22fb8 : 0x5ea90ab22fb8 | 00     |
+| 0x5ea90ab22fb9 : 0x5ea90ab22fb9 | 00     |
+| 0x5ea90ab22fba : 0x5ea90ab22fba | 00     |
+| 0x5ea90ab22fbb : 0x5ea90ab22fbb | 00     |
+| 0x5ea90ab22fbc : 0x5ea90ab22fbc | 00     |
+| 0x5ea90ab22fbd : 0x5ea90ab22fbd | 00     |
+| 0x5ea90ab22fbe : 0x5ea90ab22fbe | 00     |
+| 0x5ea90ab22fbf : 0x5ea90ab22fbf | 00     |
+| 0x5ea90ab22fc0 : 0x5ea90ab22fc0 | 00     |
+| 0x5ea90ab22fc1 : 0x5ea90ab22fc1 | 00     |
+| 0x5ea90ab22fc2 : 0x5ea90ab22fc2 | 00     |
+| 0x5ea90ab22fc3 : 0x5ea90ab22fc3 | 00     |
+| 0x5ea90ab22fc4 : 0x5ea90ab22fc4 | 00     |
+| 0x5ea90ab22fc5 : 0x5ea90ab22fc5 | 00     |
+| 0x5ea90ab22fc6 : 0x5ea90ab22fc6 | 00     |
+| 0x5ea90ab22fc7 : 0x5ea90ab22fc7 | 00     |
+| 0x5ea90ab22fc8 : 0x5ea90ab22fc8 | 00     |
+| 0x5ea90ab22fc9 : 0x5ea90ab22fc9 | 00     |
+| 0x5ea90ab22fca : 0x5ea90ab22fca | 00     |
+| 0x5ea90ab22fcb : 0x5ea90ab22fcb | 00     |
+| 0x5ea90ab22fcc : 0x5ea90ab22fcc | 00     |
+| 0x5ea90ab22fcd : 0x5ea90ab22fcd | 00     |
+| 0x5ea90ab22fce : 0x5ea90ab22fce | 00     |
+| 0x5ea90ab22fcf : 0x5ea90ab22fcf | 00     |
+------------------------------------------------
+
+Bloque #1 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab22fd0 : 0x5ea90ab22fd0 | 00     |
+| 0x5ea90ab22fd1 : 0x5ea90ab22fd1 | 00     |
+| 0x5ea90ab22fd2 : 0x5ea90ab22fd2 | 00     |
+| 0x5ea90ab22fd3 : 0x5ea90ab22fd3 | 00     |
+| 0x5ea90ab22fd4 : 0x5ea90ab22fd4 | 00     |
+| 0x5ea90ab22fd5 : 0x5ea90ab22fd5 | 00     |
+| 0x5ea90ab22fd6 : 0x5ea90ab22fd6 | 00     |
+| 0x5ea90ab22fd7 : 0x5ea90ab22fd7 | 00     |
+| 0x5ea90ab22fd8 : 0x5ea90ab22fd8 | 00     |
+| 0x5ea90ab22fd9 : 0x5ea90ab22fd9 | 00     |
+| 0x5ea90ab22fda : 0x5ea90ab22fda | 00     |
+| 0x5ea90ab22fdb : 0x5ea90ab22fdb | 00     |
+| 0x5ea90ab22fdc : 0x5ea90ab22fdc | 00     |
+| 0x5ea90ab22fdd : 0x5ea90ab22fdd | 00     |
+| 0x5ea90ab22fde : 0x5ea90ab22fde | 00     |
+| 0x5ea90ab22fdf : 0x5ea90ab22fdf | 00     |
+| 0x5ea90ab22fe0 : 0x5ea90ab22fe0 | 00     |
+| 0x5ea90ab22fe1 : 0x5ea90ab22fe1 | 00     |
+| 0x5ea90ab22fe2 : 0x5ea90ab22fe2 | 00     |
+| 0x5ea90ab22fe3 : 0x5ea90ab22fe3 | 00     |
+| 0x5ea90ab22fe4 : 0x5ea90ab22fe4 | 00     |
+| 0x5ea90ab22fe5 : 0x5ea90ab22fe5 | 00     |
+| 0x5ea90ab22fe6 : 0x5ea90ab22fe6 | 00     |
+| 0x5ea90ab22fe7 : 0x5ea90ab22fe7 | 00     |
+| 0x5ea90ab22fe8 : 0x5ea90ab22fe8 | 00     |
+| 0x5ea90ab22fe9 : 0x5ea90ab22fe9 | 00     |
+| 0x5ea90ab22fea : 0x5ea90ab22fea | 00     |
+| 0x5ea90ab22feb : 0x5ea90ab22feb | 00     |
+| 0x5ea90ab22fec : 0x5ea90ab22fec | 00     |
+| 0x5ea90ab22fed : 0x5ea90ab22fed | 00     |
+| 0x5ea90ab22fee : 0x5ea90ab22fee | 00     |
+| 0x5ea90ab22fef : 0x5ea90ab22fef | 00     |
+------------------------------------------------
+
+Bloque #2 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab22ff0 : 0x5ea90ab22ff0 | 00     |
+| 0x5ea90ab22ff1 : 0x5ea90ab22ff1 | 00     |
+| 0x5ea90ab22ff2 : 0x5ea90ab22ff2 | 00     |
+| 0x5ea90ab22ff3 : 0x5ea90ab22ff3 | 00     |
+| 0x5ea90ab22ff4 : 0x5ea90ab22ff4 | 00     |
+| 0x5ea90ab22ff5 : 0x5ea90ab22ff5 | 00     |
+| 0x5ea90ab22ff6 : 0x5ea90ab22ff6 | 00     |
+| 0x5ea90ab22ff7 : 0x5ea90ab22ff7 | 00     |
+| 0x5ea90ab22ff8 : 0x5ea90ab22ff8 | 00     |
+| 0x5ea90ab22ff9 : 0x5ea90ab22ff9 | 00     |
+| 0x5ea90ab22ffa : 0x5ea90ab22ffa | 00     |
+| 0x5ea90ab22ffb : 0x5ea90ab22ffb | 00     |
+| 0x5ea90ab22ffc : 0x5ea90ab22ffc | 00     |
+| 0x5ea90ab22ffd : 0x5ea90ab22ffd | 00     |
+| 0x5ea90ab22ffe : 0x5ea90ab22ffe | 00     |
+| 0x5ea90ab22fff : 0x5ea90ab22fff | 00     |
+| 0x5ea90ab23000 : 0x5ea90ab23000 | 00     |
+| 0x5ea90ab23001 : 0x5ea90ab23001 | 00     |
+| 0x5ea90ab23002 : 0x5ea90ab23002 | 00     |
+| 0x5ea90ab23003 : 0x5ea90ab23003 | 00     |
+| 0x5ea90ab23004 : 0x5ea90ab23004 | 00     |
+| 0x5ea90ab23005 : 0x5ea90ab23005 | 00     |
+| 0x5ea90ab23006 : 0x5ea90ab23006 | 00     |
+| 0x5ea90ab23007 : 0x5ea90ab23007 | 00     |
+| 0x5ea90ab23008 : 0x5ea90ab23008 | 00     |
+| 0x5ea90ab23009 : 0x5ea90ab23009 | 00     |
+| 0x5ea90ab2300a : 0x5ea90ab2300a | 00     |
+| 0x5ea90ab2300b : 0x5ea90ab2300b | 00     |
+| 0x5ea90ab2300c : 0x5ea90ab2300c | 00     |
+| 0x5ea90ab2300d : 0x5ea90ab2300d | 00     |
+| 0x5ea90ab2300e : 0x5ea90ab2300e | 00     |
+| 0x5ea90ab2300f : 0x5ea90ab2300f | 00     |
+------------------------------------------------
+
+Bloque #3 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23010 : 0x5ea90ab23010 | 00     |
+| 0x5ea90ab23011 : 0x5ea90ab23011 | 00     |
+| 0x5ea90ab23012 : 0x5ea90ab23012 | 00     |
+| 0x5ea90ab23013 : 0x5ea90ab23013 | 00     |
+| 0x5ea90ab23014 : 0x5ea90ab23014 | 00     |
+| 0x5ea90ab23015 : 0x5ea90ab23015 | 00     |
+| 0x5ea90ab23016 : 0x5ea90ab23016 | 00     |
+| 0x5ea90ab23017 : 0x5ea90ab23017 | 00     |
+| 0x5ea90ab23018 : 0x5ea90ab23018 | 00     |
+| 0x5ea90ab23019 : 0x5ea90ab23019 | 00     |
+| 0x5ea90ab2301a : 0x5ea90ab2301a | 00     |
+| 0x5ea90ab2301b : 0x5ea90ab2301b | 00     |
+| 0x5ea90ab2301c : 0x5ea90ab2301c | 00     |
+| 0x5ea90ab2301d : 0x5ea90ab2301d | 00     |
+| 0x5ea90ab2301e : 0x5ea90ab2301e | 00     |
+| 0x5ea90ab2301f : 0x5ea90ab2301f | 00     |
+| 0x5ea90ab23020 : 0x5ea90ab23020 | 00     |
+| 0x5ea90ab23021 : 0x5ea90ab23021 | 00     |
+| 0x5ea90ab23022 : 0x5ea90ab23022 | 00     |
+| 0x5ea90ab23023 : 0x5ea90ab23023 | 00     |
+| 0x5ea90ab23024 : 0x5ea90ab23024 | 00     |
+| 0x5ea90ab23025 : 0x5ea90ab23025 | 00     |
+| 0x5ea90ab23026 : 0x5ea90ab23026 | 00     |
+| 0x5ea90ab23027 : 0x5ea90ab23027 | 00     |
+| 0x5ea90ab23028 : 0x5ea90ab23028 | 00     |
+| 0x5ea90ab23029 : 0x5ea90ab23029 | 00     |
+| 0x5ea90ab2302a : 0x5ea90ab2302a | 00     |
+| 0x5ea90ab2302b : 0x5ea90ab2302b | 00     |
+| 0x5ea90ab2302c : 0x5ea90ab2302c | 00     |
+| 0x5ea90ab2302d : 0x5ea90ab2302d | 00     |
+| 0x5ea90ab2302e : 0x5ea90ab2302e | 00     |
+| 0x5ea90ab2302f : 0x5ea90ab2302f | 00     |
+------------------------------------------------
+
+Bloque #4 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23030 : 0x5ea90ab23030 | 76 --> v |
+| 0x5ea90ab23031 : 0x5ea90ab23031 | 61 --> a |
+| 0x5ea90ab23032 : 0x5ea90ab23032 | 72 --> r |
+| 0x5ea90ab23033 : 0x5ea90ab23033 | 69 --> i |
+| 0x5ea90ab23034 : 0x5ea90ab23034 | 61 --> a |
+| 0x5ea90ab23035 : 0x5ea90ab23035 | 62 --> b |
+| 0x5ea90ab23036 : 0x5ea90ab23036 | 6c --> l |
+| 0x5ea90ab23037 : 0x5ea90ab23037 | 65 --> e |
+| 0x5ea90ab23038 : 0x5ea90ab23038 | 33 --> 3 |
+| 0x5ea90ab23039 : 0x5ea90ab23039 | 76 --> v |
+| 0x5ea90ab2303a : 0x5ea90ab2303a | 61 --> a |
+| 0x5ea90ab2303b : 0x5ea90ab2303b | 72 --> r |
+| 0x5ea90ab2303c : 0x5ea90ab2303c | 69 --> i |
+| 0x5ea90ab2303d : 0x5ea90ab2303d | 61 --> a |
+| 0x5ea90ab2303e : 0x5ea90ab2303e | 62 --> b |
+| 0x5ea90ab2303f : 0x5ea90ab2303f | 6c --> l |
+| 0x5ea90ab23040 : 0x5ea90ab23040 | 65 --> e |
+| 0x5ea90ab23041 : 0x5ea90ab23041 | 33 --> 3 |
+| 0x5ea90ab23042 : 0x5ea90ab23042 | 76 --> v |
+| 0x5ea90ab23043 : 0x5ea90ab23043 | 61 --> a |
+| 0x5ea90ab23044 : 0x5ea90ab23044 | 72 --> r |
+| 0x5ea90ab23045 : 0x5ea90ab23045 | 69 --> i |
+| 0x5ea90ab23046 : 0x5ea90ab23046 | 61 --> a |
+| 0x5ea90ab23047 : 0x5ea90ab23047 | 62 --> b |
+| 0x5ea90ab23048 : 0x5ea90ab23048 | 6c --> l |
+| 0x5ea90ab23049 : 0x5ea90ab23049 | 65 --> e |
+| 0x5ea90ab2304a : 0x5ea90ab2304a | 33 --> 3 |
+| 0x5ea90ab2304b : 0x5ea90ab2304b | 76 --> v |
+| 0x5ea90ab2304c : 0x5ea90ab2304c | 61 --> a |
+| 0x5ea90ab2304d : 0x5ea90ab2304d | 72 --> r |
+| 0x5ea90ab2304e : 0x5ea90ab2304e | 69 --> i |
+| 0x5ea90ab2304f : 0x5ea90ab2304f | 61 --> a |
+------------------------------------------------
+
+Bloque #5 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23050 : 0x5ea90ab23050 | 76 --> v |
+| 0x5ea90ab23051 : 0x5ea90ab23051 | 61 --> a |
+| 0x5ea90ab23052 : 0x5ea90ab23052 | 72 --> r |
+| 0x5ea90ab23053 : 0x5ea90ab23053 | 69 --> i |
+| 0x5ea90ab23054 : 0x5ea90ab23054 | 61 --> a |
+| 0x5ea90ab23055 : 0x5ea90ab23055 | 62 --> b |
+| 0x5ea90ab23056 : 0x5ea90ab23056 | 6c --> l |
+| 0x5ea90ab23057 : 0x5ea90ab23057 | 65 --> e |
+| 0x5ea90ab23058 : 0x5ea90ab23058 | 33 --> 3 |
+| 0x5ea90ab23059 : 0x5ea90ab23059 | 76 --> v |
+| 0x5ea90ab2305a : 0x5ea90ab2305a | 61 --> a |
+| 0x5ea90ab2305b : 0x5ea90ab2305b | 72 --> r |
+| 0x5ea90ab2305c : 0x5ea90ab2305c | 69 --> i |
+| 0x5ea90ab2305d : 0x5ea90ab2305d | 61 --> a |
+| 0x5ea90ab2305e : 0x5ea90ab2305e | 62 --> b |
+| 0x5ea90ab2305f : 0x5ea90ab2305f | 6c --> l |
+| 0x5ea90ab23060 : 0x5ea90ab23060 | 65 --> e |
+| 0x5ea90ab23061 : 0x5ea90ab23061 | 33 --> 3 |
+| 0x5ea90ab23062 : 0x5ea90ab23062 | 76 --> v |
+| 0x5ea90ab23063 : 0x5ea90ab23063 | 61 --> a |
+| 0x5ea90ab23064 : 0x5ea90ab23064 | 72 --> r |
+| 0x5ea90ab23065 : 0x5ea90ab23065 | 69 --> i |
+| 0x5ea90ab23066 : 0x5ea90ab23066 | 61 --> a |
+| 0x5ea90ab23067 : 0x5ea90ab23067 | 62 --> b |
+| 0x5ea90ab23068 : 0x5ea90ab23068 | 6c --> l |
+| 0x5ea90ab23069 : 0x5ea90ab23069 | 65 --> e |
+| 0x5ea90ab2306a : 0x5ea90ab2306a | 33 --> 3 |
+| 0x5ea90ab2306b : 0x5ea90ab2306b | 76 --> v |
+| 0x5ea90ab2306c : 0x5ea90ab2306c | 61 --> a |
+| 0x5ea90ab2306d : 0x5ea90ab2306d | 72 --> r |
+| 0x5ea90ab2306e : 0x5ea90ab2306e | 69 --> i |
+| 0x5ea90ab2306f : 0x5ea90ab2306f | 61 --> a |
+------------------------------------------------
+
+Bloque #6 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23070 : 0x5ea90ab23070 | 76 --> v |
+| 0x5ea90ab23071 : 0x5ea90ab23071 | 61 --> a |
+| 0x5ea90ab23072 : 0x5ea90ab23072 | 72 --> r |
+| 0x5ea90ab23073 : 0x5ea90ab23073 | 69 --> i |
+| 0x5ea90ab23074 : 0x5ea90ab23074 | 61 --> a |
+| 0x5ea90ab23075 : 0x5ea90ab23075 | 62 --> b |
+| 0x5ea90ab23076 : 0x5ea90ab23076 | 6c --> l |
+| 0x5ea90ab23077 : 0x5ea90ab23077 | 65 --> e |
+| 0x5ea90ab23078 : 0x5ea90ab23078 | 31 --> 1 |
+| 0x5ea90ab23079 : 0x5ea90ab23079 | 76 --> v |
+| 0x5ea90ab2307a : 0x5ea90ab2307a | 61 --> a |
+| 0x5ea90ab2307b : 0x5ea90ab2307b | 72 --> r |
+| 0x5ea90ab2307c : 0x5ea90ab2307c | 69 --> i |
+| 0x5ea90ab2307d : 0x5ea90ab2307d | 61 --> a |
+| 0x5ea90ab2307e : 0x5ea90ab2307e | 62 --> b |
+| 0x5ea90ab2307f : 0x5ea90ab2307f | 6c --> l |
+| 0x5ea90ab23080 : 0x5ea90ab23080 | 65 --> e |
+| 0x5ea90ab23081 : 0x5ea90ab23081 | 31 --> 1 |
+| 0x5ea90ab23082 : 0x5ea90ab23082 | 76 --> v |
+| 0x5ea90ab23083 : 0x5ea90ab23083 | 61 --> a |
+| 0x5ea90ab23084 : 0x5ea90ab23084 | 72 --> r |
+| 0x5ea90ab23085 : 0x5ea90ab23085 | 69 --> i |
+| 0x5ea90ab23086 : 0x5ea90ab23086 | 61 --> a |
+| 0x5ea90ab23087 : 0x5ea90ab23087 | 62 --> b |
+| 0x5ea90ab23088 : 0x5ea90ab23088 | 6c --> l |
+| 0x5ea90ab23089 : 0x5ea90ab23089 | 65 --> e |
+| 0x5ea90ab2308a : 0x5ea90ab2308a | 31 --> 1 |
+| 0x5ea90ab2308b : 0x5ea90ab2308b | 76 --> v |
+| 0x5ea90ab2308c : 0x5ea90ab2308c | 61 --> a |
+| 0x5ea90ab2308d : 0x5ea90ab2308d | 72 --> r |
+| 0x5ea90ab2308e : 0x5ea90ab2308e | 69 --> i |
+| 0x5ea90ab2308f : 0x5ea90ab2308f | 61 --> a |
+------------------------------------------------
+
+Bloque #7 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23090 : 0x5ea90ab23090 | 76 --> v |
+| 0x5ea90ab23091 : 0x5ea90ab23091 | 61 --> a |
+| 0x5ea90ab23092 : 0x5ea90ab23092 | 72 --> r |
+| 0x5ea90ab23093 : 0x5ea90ab23093 | 69 --> i |
+| 0x5ea90ab23094 : 0x5ea90ab23094 | 61 --> a |
+| 0x5ea90ab23095 : 0x5ea90ab23095 | 62 --> b |
+| 0x5ea90ab23096 : 0x5ea90ab23096 | 6c --> l |
+| 0x5ea90ab23097 : 0x5ea90ab23097 | 65 --> e |
+| 0x5ea90ab23098 : 0x5ea90ab23098 | 31 --> 1 |
+| 0x5ea90ab23099 : 0x5ea90ab23099 | 76 --> v |
+| 0x5ea90ab2309a : 0x5ea90ab2309a | 61 --> a |
+| 0x5ea90ab2309b : 0x5ea90ab2309b | 72 --> r |
+| 0x5ea90ab2309c : 0x5ea90ab2309c | 69 --> i |
+| 0x5ea90ab2309d : 0x5ea90ab2309d | 61 --> a |
+| 0x5ea90ab2309e : 0x5ea90ab2309e | 62 --> b |
+| 0x5ea90ab2309f : 0x5ea90ab2309f | 6c --> l |
+| 0x5ea90ab230a0 : 0x5ea90ab230a0 | 65 --> e |
+| 0x5ea90ab230a1 : 0x5ea90ab230a1 | 31 --> 1 |
+| 0x5ea90ab230a2 : 0x5ea90ab230a2 | 76 --> v |
+| 0x5ea90ab230a3 : 0x5ea90ab230a3 | 61 --> a |
+| 0x5ea90ab230a4 : 0x5ea90ab230a4 | 72 --> r |
+| 0x5ea90ab230a5 : 0x5ea90ab230a5 | 69 --> i |
+| 0x5ea90ab230a6 : 0x5ea90ab230a6 | 61 --> a |
+| 0x5ea90ab230a7 : 0x5ea90ab230a7 | 62 --> b |
+| 0x5ea90ab230a8 : 0x5ea90ab230a8 | 6c --> l |
+| 0x5ea90ab230a9 : 0x5ea90ab230a9 | 65 --> e |
+| 0x5ea90ab230aa : 0x5ea90ab230aa | 31 --> 1 |
+| 0x5ea90ab230ab : 0x5ea90ab230ab | 76 --> v |
+| 0x5ea90ab230ac : 0x5ea90ab230ac | 61 --> a |
+| 0x5ea90ab230ad : 0x5ea90ab230ad | 72 --> r |
+| 0x5ea90ab230ae : 0x5ea90ab230ae | 69 --> i |
+| 0x5ea90ab230af : 0x5ea90ab230af | 61 --> a |
+------------------------------------------------
+
+Bloque #8 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab230b0 : 0x5ea90ab230b0 | 76 --> v |
+| 0x5ea90ab230b1 : 0x5ea90ab230b1 | 61 --> a |
+| 0x5ea90ab230b2 : 0x5ea90ab230b2 | 72 --> r |
+| 0x5ea90ab230b3 : 0x5ea90ab230b3 | 69 --> i |
+| 0x5ea90ab230b4 : 0x5ea90ab230b4 | 61 --> a |
+| 0x5ea90ab230b5 : 0x5ea90ab230b5 | 62 --> b |
+| 0x5ea90ab230b6 : 0x5ea90ab230b6 | 6c --> l |
+| 0x5ea90ab230b7 : 0x5ea90ab230b7 | 65 --> e |
+| 0x5ea90ab230b8 : 0x5ea90ab230b8 | 31 --> 1 |
+| 0x5ea90ab230b9 : 0x5ea90ab230b9 | 76 --> v |
+| 0x5ea90ab230ba : 0x5ea90ab230ba | 61 --> a |
+| 0x5ea90ab230bb : 0x5ea90ab230bb | 72 --> r |
+| 0x5ea90ab230bc : 0x5ea90ab230bc | 69 --> i |
+| 0x5ea90ab230bd : 0x5ea90ab230bd | 61 --> a |
+| 0x5ea90ab230be : 0x5ea90ab230be | 62 --> b |
+| 0x5ea90ab230bf : 0x5ea90ab230bf | 6c --> l |
+| 0x5ea90ab230c0 : 0x5ea90ab230c0 | 65 --> e |
+| 0x5ea90ab230c1 : 0x5ea90ab230c1 | 31 --> 1 |
+| 0x5ea90ab230c2 : 0x5ea90ab230c2 | 76 --> v |
+| 0x5ea90ab230c3 : 0x5ea90ab230c3 | 61 --> a |
+| 0x5ea90ab230c4 : 0x5ea90ab230c4 | 72 --> r |
+| 0x5ea90ab230c5 : 0x5ea90ab230c5 | 69 --> i |
+| 0x5ea90ab230c6 : 0x5ea90ab230c6 | 61 --> a |
+| 0x5ea90ab230c7 : 0x5ea90ab230c7 | 62 --> b |
+| 0x5ea90ab230c8 : 0x5ea90ab230c8 | 6c --> l |
+| 0x5ea90ab230c9 : 0x5ea90ab230c9 | 65 --> e |
+| 0x5ea90ab230ca : 0x5ea90ab230ca | 31 --> 1 |
+| 0x5ea90ab230cb : 0x5ea90ab230cb | 76 --> v |
+| 0x5ea90ab230cc : 0x5ea90ab230cc | 61 --> a |
+| 0x5ea90ab230cd : 0x5ea90ab230cd | 72 --> r |
+| 0x5ea90ab230ce : 0x5ea90ab230ce | 69 --> i |
+| 0x5ea90ab230cf : 0x5ea90ab230cf | 61 --> a |
+------------------------------------------------
+
+Bloque #9 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab230d0 : 0x5ea90ab230d0 | 76 --> v |
+| 0x5ea90ab230d1 : 0x5ea90ab230d1 | 61 --> a |
+| 0x5ea90ab230d2 : 0x5ea90ab230d2 | 72 --> r |
+| 0x5ea90ab230d3 : 0x5ea90ab230d3 | 69 --> i |
+| 0x5ea90ab230d4 : 0x5ea90ab230d4 | 61 --> a |
+| 0x5ea90ab230d5 : 0x5ea90ab230d5 | 62 --> b |
+| 0x5ea90ab230d6 : 0x5ea90ab230d6 | 6c --> l |
+| 0x5ea90ab230d7 : 0x5ea90ab230d7 | 65 --> e |
+| 0x5ea90ab230d8 : 0x5ea90ab230d8 | 31 --> 1 |
+| 0x5ea90ab230d9 : 0x5ea90ab230d9 | 76 --> v |
+| 0x5ea90ab230da : 0x5ea90ab230da | 61 --> a |
+| 0x5ea90ab230db : 0x5ea90ab230db | 72 --> r |
+| 0x5ea90ab230dc : 0x5ea90ab230dc | 69 --> i |
+| 0x5ea90ab230dd : 0x5ea90ab230dd | 61 --> a |
+| 0x5ea90ab230de : 0x5ea90ab230de | 62 --> b |
+| 0x5ea90ab230df : 0x5ea90ab230df | 6c --> l |
+| 0x5ea90ab230e0 : 0x5ea90ab230e0 | 65 --> e |
+| 0x5ea90ab230e1 : 0x5ea90ab230e1 | 31 --> 1 |
+| 0x5ea90ab230e2 : 0x5ea90ab230e2 | 76 --> v |
+| 0x5ea90ab230e3 : 0x5ea90ab230e3 | 61 --> a |
+| 0x5ea90ab230e4 : 0x5ea90ab230e4 | 72 --> r |
+| 0x5ea90ab230e5 : 0x5ea90ab230e5 | 69 --> i |
+| 0x5ea90ab230e6 : 0x5ea90ab230e6 | 61 --> a |
+| 0x5ea90ab230e7 : 0x5ea90ab230e7 | 62 --> b |
+| 0x5ea90ab230e8 : 0x5ea90ab230e8 | 6c --> l |
+| 0x5ea90ab230e9 : 0x5ea90ab230e9 | 65 --> e |
+| 0x5ea90ab230ea : 0x5ea90ab230ea | 31 --> 1 |
+| 0x5ea90ab230eb : 0x5ea90ab230eb | 76 --> v |
+| 0x5ea90ab230ec : 0x5ea90ab230ec | 61 --> a |
+| 0x5ea90ab230ed : 0x5ea90ab230ed | 72 --> r |
+| 0x5ea90ab230ee : 0x5ea90ab230ee | 69 --> i |
+| 0x5ea90ab230ef : 0x5ea90ab230ef | 61 --> a |
+------------------------------------------------
+
+Bloque #10 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab230f0 : 0x5ea90ab230f0 | 76 --> v |
+| 0x5ea90ab230f1 : 0x5ea90ab230f1 | 61 --> a |
+| 0x5ea90ab230f2 : 0x5ea90ab230f2 | 72 --> r |
+| 0x5ea90ab230f3 : 0x5ea90ab230f3 | 69 --> i |
+| 0x5ea90ab230f4 : 0x5ea90ab230f4 | 61 --> a |
+| 0x5ea90ab230f5 : 0x5ea90ab230f5 | 62 --> b |
+| 0x5ea90ab230f6 : 0x5ea90ab230f6 | 6c --> l |
+| 0x5ea90ab230f7 : 0x5ea90ab230f7 | 65 --> e |
+| 0x5ea90ab230f8 : 0x5ea90ab230f8 | 32 --> 2 |
+| 0x5ea90ab230f9 : 0x5ea90ab230f9 | 76 --> v |
+| 0x5ea90ab230fa : 0x5ea90ab230fa | 61 --> a |
+| 0x5ea90ab230fb : 0x5ea90ab230fb | 72 --> r |
+| 0x5ea90ab230fc : 0x5ea90ab230fc | 69 --> i |
+| 0x5ea90ab230fd : 0x5ea90ab230fd | 61 --> a |
+| 0x5ea90ab230fe : 0x5ea90ab230fe | 62 --> b |
+| 0x5ea90ab230ff : 0x5ea90ab230ff | 6c --> l |
+| 0x5ea90ab23100 : 0x5ea90ab23100 | 65 --> e |
+| 0x5ea90ab23101 : 0x5ea90ab23101 | 32 --> 2 |
+| 0x5ea90ab23102 : 0x5ea90ab23102 | 76 --> v |
+| 0x5ea90ab23103 : 0x5ea90ab23103 | 61 --> a |
+| 0x5ea90ab23104 : 0x5ea90ab23104 | 72 --> r |
+| 0x5ea90ab23105 : 0x5ea90ab23105 | 69 --> i |
+| 0x5ea90ab23106 : 0x5ea90ab23106 | 61 --> a |
+| 0x5ea90ab23107 : 0x5ea90ab23107 | 62 --> b |
+| 0x5ea90ab23108 : 0x5ea90ab23108 | 6c --> l |
+| 0x5ea90ab23109 : 0x5ea90ab23109 | 65 --> e |
+| 0x5ea90ab2310a : 0x5ea90ab2310a | 32 --> 2 |
+| 0x5ea90ab2310b : 0x5ea90ab2310b | 76 --> v |
+| 0x5ea90ab2310c : 0x5ea90ab2310c | 61 --> a |
+| 0x5ea90ab2310d : 0x5ea90ab2310d | 72 --> r |
+| 0x5ea90ab2310e : 0x5ea90ab2310e | 69 --> i |
+| 0x5ea90ab2310f : 0x5ea90ab2310f | 61 --> a |
+------------------------------------------------
+
+Bloque #11 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23110 : 0x5ea90ab23110 | 76 --> v |
+| 0x5ea90ab23111 : 0x5ea90ab23111 | 61 --> a |
+| 0x5ea90ab23112 : 0x5ea90ab23112 | 72 --> r |
+| 0x5ea90ab23113 : 0x5ea90ab23113 | 69 --> i |
+| 0x5ea90ab23114 : 0x5ea90ab23114 | 61 --> a |
+| 0x5ea90ab23115 : 0x5ea90ab23115 | 62 --> b |
+| 0x5ea90ab23116 : 0x5ea90ab23116 | 6c --> l |
+| 0x5ea90ab23117 : 0x5ea90ab23117 | 65 --> e |
+| 0x5ea90ab23118 : 0x5ea90ab23118 | 32 --> 2 |
+| 0x5ea90ab23119 : 0x5ea90ab23119 | 76 --> v |
+| 0x5ea90ab2311a : 0x5ea90ab2311a | 61 --> a |
+| 0x5ea90ab2311b : 0x5ea90ab2311b | 72 --> r |
+| 0x5ea90ab2311c : 0x5ea90ab2311c | 69 --> i |
+| 0x5ea90ab2311d : 0x5ea90ab2311d | 61 --> a |
+| 0x5ea90ab2311e : 0x5ea90ab2311e | 62 --> b |
+| 0x5ea90ab2311f : 0x5ea90ab2311f | 6c --> l |
+| 0x5ea90ab23120 : 0x5ea90ab23120 | 65 --> e |
+| 0x5ea90ab23121 : 0x5ea90ab23121 | 32 --> 2 |
+| 0x5ea90ab23122 : 0x5ea90ab23122 | 76 --> v |
+| 0x5ea90ab23123 : 0x5ea90ab23123 | 61 --> a |
+| 0x5ea90ab23124 : 0x5ea90ab23124 | 72 --> r |
+| 0x5ea90ab23125 : 0x5ea90ab23125 | 69 --> i |
+| 0x5ea90ab23126 : 0x5ea90ab23126 | 61 --> a |
+| 0x5ea90ab23127 : 0x5ea90ab23127 | 62 --> b |
+| 0x5ea90ab23128 : 0x5ea90ab23128 | 6c --> l |
+| 0x5ea90ab23129 : 0x5ea90ab23129 | 65 --> e |
+| 0x5ea90ab2312a : 0x5ea90ab2312a | 32 --> 2 |
+| 0x5ea90ab2312b : 0x5ea90ab2312b | 76 --> v |
+| 0x5ea90ab2312c : 0x5ea90ab2312c | 61 --> a |
+| 0x5ea90ab2312d : 0x5ea90ab2312d | 72 --> r |
+| 0x5ea90ab2312e : 0x5ea90ab2312e | 69 --> i |
+| 0x5ea90ab2312f : 0x5ea90ab2312f | 61 --> a |
+------------------------------------------------
+
+Bloque #12 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23130 : 0x5ea90ab23130 | 76 --> v |
+| 0x5ea90ab23131 : 0x5ea90ab23131 | 61 --> a |
+| 0x5ea90ab23132 : 0x5ea90ab23132 | 72 --> r |
+| 0x5ea90ab23133 : 0x5ea90ab23133 | 69 --> i |
+| 0x5ea90ab23134 : 0x5ea90ab23134 | 61 --> a |
+| 0x5ea90ab23135 : 0x5ea90ab23135 | 62 --> b |
+| 0x5ea90ab23136 : 0x5ea90ab23136 | 6c --> l |
+| 0x5ea90ab23137 : 0x5ea90ab23137 | 65 --> e |
+| 0x5ea90ab23138 : 0x5ea90ab23138 | 32 --> 2 |
+| 0x5ea90ab23139 : 0x5ea90ab23139 | 76 --> v |
+| 0x5ea90ab2313a : 0x5ea90ab2313a | 61 --> a |
+| 0x5ea90ab2313b : 0x5ea90ab2313b | 72 --> r |
+| 0x5ea90ab2313c : 0x5ea90ab2313c | 69 --> i |
+| 0x5ea90ab2313d : 0x5ea90ab2313d | 61 --> a |
+| 0x5ea90ab2313e : 0x5ea90ab2313e | 62 --> b |
+| 0x5ea90ab2313f : 0x5ea90ab2313f | 6c --> l |
+| 0x5ea90ab23140 : 0x5ea90ab23140 | 65 --> e |
+| 0x5ea90ab23141 : 0x5ea90ab23141 | 32 --> 2 |
+| 0x5ea90ab23142 : 0x5ea90ab23142 | 76 --> v |
+| 0x5ea90ab23143 : 0x5ea90ab23143 | 61 --> a |
+| 0x5ea90ab23144 : 0x5ea90ab23144 | 72 --> r |
+| 0x5ea90ab23145 : 0x5ea90ab23145 | 69 --> i |
+| 0x5ea90ab23146 : 0x5ea90ab23146 | 61 --> a |
+| 0x5ea90ab23147 : 0x5ea90ab23147 | 62 --> b |
+| 0x5ea90ab23148 : 0x5ea90ab23148 | 6c --> l |
+| 0x5ea90ab23149 : 0x5ea90ab23149 | 65 --> e |
+| 0x5ea90ab2314a : 0x5ea90ab2314a | 32 --> 2 |
+| 0x5ea90ab2314b : 0x5ea90ab2314b | 76 --> v |
+| 0x5ea90ab2314c : 0x5ea90ab2314c | 61 --> a |
+| 0x5ea90ab2314d : 0x5ea90ab2314d | 72 --> r |
+| 0x5ea90ab2314e : 0x5ea90ab2314e | 69 --> i |
+| 0x5ea90ab2314f : 0x5ea90ab2314f | 61 --> a |
+------------------------------------------------
+
+Bloque #13 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23150 : 0x5ea90ab23150 | 76 --> v |
+| 0x5ea90ab23151 : 0x5ea90ab23151 | 61 --> a |
+| 0x5ea90ab23152 : 0x5ea90ab23152 | 72 --> r |
+| 0x5ea90ab23153 : 0x5ea90ab23153 | 69 --> i |
+| 0x5ea90ab23154 : 0x5ea90ab23154 | 61 --> a |
+| 0x5ea90ab23155 : 0x5ea90ab23155 | 62 --> b |
+| 0x5ea90ab23156 : 0x5ea90ab23156 | 6c --> l |
+| 0x5ea90ab23157 : 0x5ea90ab23157 | 65 --> e |
+| 0x5ea90ab23158 : 0x5ea90ab23158 | 32 --> 2 |
+| 0x5ea90ab23159 : 0x5ea90ab23159 | 76 --> v |
+| 0x5ea90ab2315a : 0x5ea90ab2315a | 61 --> a |
+| 0x5ea90ab2315b : 0x5ea90ab2315b | 72 --> r |
+| 0x5ea90ab2315c : 0x5ea90ab2315c | 69 --> i |
+| 0x5ea90ab2315d : 0x5ea90ab2315d | 61 --> a |
+| 0x5ea90ab2315e : 0x5ea90ab2315e | 62 --> b |
+| 0x5ea90ab2315f : 0x5ea90ab2315f | 6c --> l |
+| 0x5ea90ab23160 : 0x5ea90ab23160 | 65 --> e |
+| 0x5ea90ab23161 : 0x5ea90ab23161 | 32 --> 2 |
+| 0x5ea90ab23162 : 0x5ea90ab23162 | 76 --> v |
+| 0x5ea90ab23163 : 0x5ea90ab23163 | 61 --> a |
+| 0x5ea90ab23164 : 0x5ea90ab23164 | 72 --> r |
+| 0x5ea90ab23165 : 0x5ea90ab23165 | 69 --> i |
+| 0x5ea90ab23166 : 0x5ea90ab23166 | 61 --> a |
+| 0x5ea90ab23167 : 0x5ea90ab23167 | 62 --> b |
+| 0x5ea90ab23168 : 0x5ea90ab23168 | 6c --> l |
+| 0x5ea90ab23169 : 0x5ea90ab23169 | 65 --> e |
+| 0x5ea90ab2316a : 0x5ea90ab2316a | 32 --> 2 |
+| 0x5ea90ab2316b : 0x5ea90ab2316b | 76 --> v |
+| 0x5ea90ab2316c : 0x5ea90ab2316c | 61 --> a |
+| 0x5ea90ab2316d : 0x5ea90ab2316d | 72 --> r |
+| 0x5ea90ab2316e : 0x5ea90ab2316e | 69 --> i |
+| 0x5ea90ab2316f : 0x5ea90ab2316f | 61 --> a |
+------------------------------------------------
+
+Bloque #14 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23170 : 0x5ea90ab23170 | 76 --> v |
+| 0x5ea90ab23171 : 0x5ea90ab23171 | 61 --> a |
+| 0x5ea90ab23172 : 0x5ea90ab23172 | 72 --> r |
+| 0x5ea90ab23173 : 0x5ea90ab23173 | 69 --> i |
+| 0x5ea90ab23174 : 0x5ea90ab23174 | 61 --> a |
+| 0x5ea90ab23175 : 0x5ea90ab23175 | 62 --> b |
+| 0x5ea90ab23176 : 0x5ea90ab23176 | 6c --> l |
+| 0x5ea90ab23177 : 0x5ea90ab23177 | 65 --> e |
+| 0x5ea90ab23178 : 0x5ea90ab23178 | 31 --> 1 |
+| 0x5ea90ab23179 : 0x5ea90ab23179 | 76 --> v |
+| 0x5ea90ab2317a : 0x5ea90ab2317a | 61 --> a |
+| 0x5ea90ab2317b : 0x5ea90ab2317b | 72 --> r |
+| 0x5ea90ab2317c : 0x5ea90ab2317c | 69 --> i |
+| 0x5ea90ab2317d : 0x5ea90ab2317d | 61 --> a |
+| 0x5ea90ab2317e : 0x5ea90ab2317e | 62 --> b |
+| 0x5ea90ab2317f : 0x5ea90ab2317f | 6c --> l |
+| 0x5ea90ab23180 : 0x5ea90ab23180 | 65 --> e |
+| 0x5ea90ab23181 : 0x5ea90ab23181 | 31 --> 1 |
+| 0x5ea90ab23182 : 0x5ea90ab23182 | 76 --> v |
+| 0x5ea90ab23183 : 0x5ea90ab23183 | 61 --> a |
+| 0x5ea90ab23184 : 0x5ea90ab23184 | 72 --> r |
+| 0x5ea90ab23185 : 0x5ea90ab23185 | 69 --> i |
+| 0x5ea90ab23186 : 0x5ea90ab23186 | 61 --> a |
+| 0x5ea90ab23187 : 0x5ea90ab23187 | 62 --> b |
+| 0x5ea90ab23188 : 0x5ea90ab23188 | 6c --> l |
+| 0x5ea90ab23189 : 0x5ea90ab23189 | 65 --> e |
+| 0x5ea90ab2318a : 0x5ea90ab2318a | 31 --> 1 |
+| 0x5ea90ab2318b : 0x5ea90ab2318b | 76 --> v |
+| 0x5ea90ab2318c : 0x5ea90ab2318c | 61 --> a |
+| 0x5ea90ab2318d : 0x5ea90ab2318d | 72 --> r |
+| 0x5ea90ab2318e : 0x5ea90ab2318e | 69 --> i |
+| 0x5ea90ab2318f : 0x5ea90ab2318f | 61 --> a |
+------------------------------------------------
+
+Bloque #15 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23190 : 0x5ea90ab23190 | 76 --> v |
+| 0x5ea90ab23191 : 0x5ea90ab23191 | 61 --> a |
+| 0x5ea90ab23192 : 0x5ea90ab23192 | 72 --> r |
+| 0x5ea90ab23193 : 0x5ea90ab23193 | 00     |
+| 0x5ea90ab23194 : 0x5ea90ab23194 | 00     |
+| 0x5ea90ab23195 : 0x5ea90ab23195 | 00     |
+| 0x5ea90ab23196 : 0x5ea90ab23196 | 00     |
+| 0x5ea90ab23197 : 0x5ea90ab23197 | 00     |
+| 0x5ea90ab23198 : 0x5ea90ab23198 | 00     |
+| 0x5ea90ab23199 : 0x5ea90ab23199 | 00     |
+| 0x5ea90ab2319a : 0x5ea90ab2319a | 00     |
+| 0x5ea90ab2319b : 0x5ea90ab2319b | 00     |
+| 0x5ea90ab2319c : 0x5ea90ab2319c | 00     |
+| 0x5ea90ab2319d : 0x5ea90ab2319d | 00     |
+| 0x5ea90ab2319e : 0x5ea90ab2319e | 00     |
+| 0x5ea90ab2319f : 0x5ea90ab2319f | 00     |
+| 0x5ea90ab231a0 : 0x5ea90ab231a0 | 00     |
+| 0x5ea90ab231a1 : 0x5ea90ab231a1 | 00     |
+| 0x5ea90ab231a2 : 0x5ea90ab231a2 | 00     |
+| 0x5ea90ab231a3 : 0x5ea90ab231a3 | 00     |
+| 0x5ea90ab231a4 : 0x5ea90ab231a4 | 00     |
+| 0x5ea90ab231a5 : 0x5ea90ab231a5 | 00     |
+| 0x5ea90ab231a6 : 0x5ea90ab231a6 | 00     |
+| 0x5ea90ab231a7 : 0x5ea90ab231a7 | 00     |
+| 0x5ea90ab231a8 : 0x5ea90ab231a8 | 00     |
+| 0x5ea90ab231a9 : 0x5ea90ab231a9 | 00     |
+| 0x5ea90ab231aa : 0x5ea90ab231aa | 00     |
+| 0x5ea90ab231ab : 0x5ea90ab231ab | 00     |
+| 0x5ea90ab231ac : 0x5ea90ab231ac | 00     |
+| 0x5ea90ab231ad : 0x5ea90ab231ad | 00     |
+| 0x5ea90ab231ae : 0x5ea90ab231ae | 00     |
+| 0x5ea90ab231af : 0x5ea90ab231af | 00     |
+------------------------------------------------
+
+Operación: REALLOC, Variable: variable1, Tamaño: 256
+Liberado 32 bytes en la dirección 0x5ea90ab23070
+Liberado 32 bytes en la dirección 0x5ea90ab23090
+Liberado 32 bytes en la dirección 0x5ea90ab230b0
+Liberado 32 bytes en la dirección 0x5ea90ab230d0
+Best fit block: 0x5ea90ab230b0
+Variable variable1 asignada correctamente
+Variable variable1 reasignada correctamente
+Operación: FREE, Variable: variable1
+Liberado 32 bytes en la dirección 0x5ea90ab230b0
+Liberado 32 bytes en la dirección 0x5ea90ab230d0
+Liberado 32 bytes en la dirección 0x5ea90ab230f0
+Liberado 32 bytes en la dirección 0x5ea90ab23110
+Liberado 32 bytes en la dirección 0x5ea90ab23130
+Liberado 32 bytes en la dirección 0x5ea90ab23150
+Liberado 32 bytes en la dirección 0x5ea90ab23170
+Liberado 32 bytes en la dirección 0x5ea90ab23190
+Variable variable1 liberada correctamente
+Operación: PRINT
+Clave: variable3
+Direcciones:
+  - 0x5ea90ab23030
+  - 0x5ea90ab23050
+
+Bloque #0 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab22fb0 : 0x5ea90ab22fb0 | 82     |
+| 0x5ea90ab22fb1 : 0x5ea90ab22fb1 | 86     |
+| 0x5ea90ab22fb2 : 0x5ea90ab22fb2 | 22 --> " |
+| 0x5ea90ab22fb3 : 0x5ea90ab22fb3 | e0     |
+| 0x5ea90ab22fb4 : 0x5ea90ab22fb4 | ac     |
+| 0x5ea90ab22fb5 : 0x5ea90ab22fb5 | 5e --> ^ |
+| 0x5ea90ab22fb6 : 0x5ea90ab22fb6 | 00     |
+| 0x5ea90ab22fb7 : 0x5ea90ab22fb7 | 00     |
+| 0x5ea90ab22fb8 : 0x5ea90ab22fb8 | 00     |
+| 0x5ea90ab22fb9 : 0x5ea90ab22fb9 | 00     |
+| 0x5ea90ab22fba : 0x5ea90ab22fba | 00     |
+| 0x5ea90ab22fbb : 0x5ea90ab22fbb | 00     |
+| 0x5ea90ab22fbc : 0x5ea90ab22fbc | 00     |
+| 0x5ea90ab22fbd : 0x5ea90ab22fbd | 00     |
+| 0x5ea90ab22fbe : 0x5ea90ab22fbe | 00     |
+| 0x5ea90ab22fbf : 0x5ea90ab22fbf | 00     |
+| 0x5ea90ab22fc0 : 0x5ea90ab22fc0 | 00     |
+| 0x5ea90ab22fc1 : 0x5ea90ab22fc1 | 00     |
+| 0x5ea90ab22fc2 : 0x5ea90ab22fc2 | 00     |
+| 0x5ea90ab22fc3 : 0x5ea90ab22fc3 | 00     |
+| 0x5ea90ab22fc4 : 0x5ea90ab22fc4 | 00     |
+| 0x5ea90ab22fc5 : 0x5ea90ab22fc5 | 00     |
+| 0x5ea90ab22fc6 : 0x5ea90ab22fc6 | 00     |
+| 0x5ea90ab22fc7 : 0x5ea90ab22fc7 | 00     |
+| 0x5ea90ab22fc8 : 0x5ea90ab22fc8 | 00     |
+| 0x5ea90ab22fc9 : 0x5ea90ab22fc9 | 00     |
+| 0x5ea90ab22fca : 0x5ea90ab22fca | 00     |
+| 0x5ea90ab22fcb : 0x5ea90ab22fcb | 00     |
+| 0x5ea90ab22fcc : 0x5ea90ab22fcc | 00     |
+| 0x5ea90ab22fcd : 0x5ea90ab22fcd | 00     |
+| 0x5ea90ab22fce : 0x5ea90ab22fce | 00     |
+| 0x5ea90ab22fcf : 0x5ea90ab22fcf | 00     |
+------------------------------------------------
+
+Bloque #1 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab22fd0 : 0x5ea90ab22fd0 | 00     |
+| 0x5ea90ab22fd1 : 0x5ea90ab22fd1 | 00     |
+| 0x5ea90ab22fd2 : 0x5ea90ab22fd2 | 00     |
+| 0x5ea90ab22fd3 : 0x5ea90ab22fd3 | 00     |
+| 0x5ea90ab22fd4 : 0x5ea90ab22fd4 | 00     |
+| 0x5ea90ab22fd5 : 0x5ea90ab22fd5 | 00     |
+| 0x5ea90ab22fd6 : 0x5ea90ab22fd6 | 00     |
+| 0x5ea90ab22fd7 : 0x5ea90ab22fd7 | 00     |
+| 0x5ea90ab22fd8 : 0x5ea90ab22fd8 | 00     |
+| 0x5ea90ab22fd9 : 0x5ea90ab22fd9 | 00     |
+| 0x5ea90ab22fda : 0x5ea90ab22fda | 00     |
+| 0x5ea90ab22fdb : 0x5ea90ab22fdb | 00     |
+| 0x5ea90ab22fdc : 0x5ea90ab22fdc | 00     |
+| 0x5ea90ab22fdd : 0x5ea90ab22fdd | 00     |
+| 0x5ea90ab22fde : 0x5ea90ab22fde | 00     |
+| 0x5ea90ab22fdf : 0x5ea90ab22fdf | 00     |
+| 0x5ea90ab22fe0 : 0x5ea90ab22fe0 | 00     |
+| 0x5ea90ab22fe1 : 0x5ea90ab22fe1 | 00     |
+| 0x5ea90ab22fe2 : 0x5ea90ab22fe2 | 00     |
+| 0x5ea90ab22fe3 : 0x5ea90ab22fe3 | 00     |
+| 0x5ea90ab22fe4 : 0x5ea90ab22fe4 | 00     |
+| 0x5ea90ab22fe5 : 0x5ea90ab22fe5 | 00     |
+| 0x5ea90ab22fe6 : 0x5ea90ab22fe6 | 00     |
+| 0x5ea90ab22fe7 : 0x5ea90ab22fe7 | 00     |
+| 0x5ea90ab22fe8 : 0x5ea90ab22fe8 | 00     |
+| 0x5ea90ab22fe9 : 0x5ea90ab22fe9 | 00     |
+| 0x5ea90ab22fea : 0x5ea90ab22fea | 00     |
+| 0x5ea90ab22feb : 0x5ea90ab22feb | 00     |
+| 0x5ea90ab22fec : 0x5ea90ab22fec | 00     |
+| 0x5ea90ab22fed : 0x5ea90ab22fed | 00     |
+| 0x5ea90ab22fee : 0x5ea90ab22fee | 00     |
+| 0x5ea90ab22fef : 0x5ea90ab22fef | 00     |
+------------------------------------------------
+
+Bloque #2 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab22ff0 : 0x5ea90ab22ff0 | 00     |
+| 0x5ea90ab22ff1 : 0x5ea90ab22ff1 | 00     |
+| 0x5ea90ab22ff2 : 0x5ea90ab22ff2 | 00     |
+| 0x5ea90ab22ff3 : 0x5ea90ab22ff3 | 00     |
+| 0x5ea90ab22ff4 : 0x5ea90ab22ff4 | 00     |
+| 0x5ea90ab22ff5 : 0x5ea90ab22ff5 | 00     |
+| 0x5ea90ab22ff6 : 0x5ea90ab22ff6 | 00     |
+| 0x5ea90ab22ff7 : 0x5ea90ab22ff7 | 00     |
+| 0x5ea90ab22ff8 : 0x5ea90ab22ff8 | 00     |
+| 0x5ea90ab22ff9 : 0x5ea90ab22ff9 | 00     |
+| 0x5ea90ab22ffa : 0x5ea90ab22ffa | 00     |
+| 0x5ea90ab22ffb : 0x5ea90ab22ffb | 00     |
+| 0x5ea90ab22ffc : 0x5ea90ab22ffc | 00     |
+| 0x5ea90ab22ffd : 0x5ea90ab22ffd | 00     |
+| 0x5ea90ab22ffe : 0x5ea90ab22ffe | 00     |
+| 0x5ea90ab22fff : 0x5ea90ab22fff | 00     |
+| 0x5ea90ab23000 : 0x5ea90ab23000 | 00     |
+| 0x5ea90ab23001 : 0x5ea90ab23001 | 00     |
+| 0x5ea90ab23002 : 0x5ea90ab23002 | 00     |
+| 0x5ea90ab23003 : 0x5ea90ab23003 | 00     |
+| 0x5ea90ab23004 : 0x5ea90ab23004 | 00     |
+| 0x5ea90ab23005 : 0x5ea90ab23005 | 00     |
+| 0x5ea90ab23006 : 0x5ea90ab23006 | 00     |
+| 0x5ea90ab23007 : 0x5ea90ab23007 | 00     |
+| 0x5ea90ab23008 : 0x5ea90ab23008 | 00     |
+| 0x5ea90ab23009 : 0x5ea90ab23009 | 00     |
+| 0x5ea90ab2300a : 0x5ea90ab2300a | 00     |
+| 0x5ea90ab2300b : 0x5ea90ab2300b | 00     |
+| 0x5ea90ab2300c : 0x5ea90ab2300c | 00     |
+| 0x5ea90ab2300d : 0x5ea90ab2300d | 00     |
+| 0x5ea90ab2300e : 0x5ea90ab2300e | 00     |
+| 0x5ea90ab2300f : 0x5ea90ab2300f | 00     |
+------------------------------------------------
+
+Bloque #3 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23010 : 0x5ea90ab23010 | 00     |
+| 0x5ea90ab23011 : 0x5ea90ab23011 | 00     |
+| 0x5ea90ab23012 : 0x5ea90ab23012 | 00     |
+| 0x5ea90ab23013 : 0x5ea90ab23013 | 00     |
+| 0x5ea90ab23014 : 0x5ea90ab23014 | 00     |
+| 0x5ea90ab23015 : 0x5ea90ab23015 | 00     |
+| 0x5ea90ab23016 : 0x5ea90ab23016 | 00     |
+| 0x5ea90ab23017 : 0x5ea90ab23017 | 00     |
+| 0x5ea90ab23018 : 0x5ea90ab23018 | 00     |
+| 0x5ea90ab23019 : 0x5ea90ab23019 | 00     |
+| 0x5ea90ab2301a : 0x5ea90ab2301a | 00     |
+| 0x5ea90ab2301b : 0x5ea90ab2301b | 00     |
+| 0x5ea90ab2301c : 0x5ea90ab2301c | 00     |
+| 0x5ea90ab2301d : 0x5ea90ab2301d | 00     |
+| 0x5ea90ab2301e : 0x5ea90ab2301e | 00     |
+| 0x5ea90ab2301f : 0x5ea90ab2301f | 00     |
+| 0x5ea90ab23020 : 0x5ea90ab23020 | 00     |
+| 0x5ea90ab23021 : 0x5ea90ab23021 | 00     |
+| 0x5ea90ab23022 : 0x5ea90ab23022 | 00     |
+| 0x5ea90ab23023 : 0x5ea90ab23023 | 00     |
+| 0x5ea90ab23024 : 0x5ea90ab23024 | 00     |
+| 0x5ea90ab23025 : 0x5ea90ab23025 | 00     |
+| 0x5ea90ab23026 : 0x5ea90ab23026 | 00     |
+| 0x5ea90ab23027 : 0x5ea90ab23027 | 00     |
+| 0x5ea90ab23028 : 0x5ea90ab23028 | 00     |
+| 0x5ea90ab23029 : 0x5ea90ab23029 | 00     |
+| 0x5ea90ab2302a : 0x5ea90ab2302a | 00     |
+| 0x5ea90ab2302b : 0x5ea90ab2302b | 00     |
+| 0x5ea90ab2302c : 0x5ea90ab2302c | 00     |
+| 0x5ea90ab2302d : 0x5ea90ab2302d | 00     |
+| 0x5ea90ab2302e : 0x5ea90ab2302e | 00     |
+| 0x5ea90ab2302f : 0x5ea90ab2302f | 00     |
+------------------------------------------------
+
+Bloque #4 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23030 : 0x5ea90ab23030 | 76 --> v |
+| 0x5ea90ab23031 : 0x5ea90ab23031 | 61 --> a |
+| 0x5ea90ab23032 : 0x5ea90ab23032 | 72 --> r |
+| 0x5ea90ab23033 : 0x5ea90ab23033 | 69 --> i |
+| 0x5ea90ab23034 : 0x5ea90ab23034 | 61 --> a |
+| 0x5ea90ab23035 : 0x5ea90ab23035 | 62 --> b |
+| 0x5ea90ab23036 : 0x5ea90ab23036 | 6c --> l |
+| 0x5ea90ab23037 : 0x5ea90ab23037 | 65 --> e |
+| 0x5ea90ab23038 : 0x5ea90ab23038 | 33 --> 3 |
+| 0x5ea90ab23039 : 0x5ea90ab23039 | 76 --> v |
+| 0x5ea90ab2303a : 0x5ea90ab2303a | 61 --> a |
+| 0x5ea90ab2303b : 0x5ea90ab2303b | 72 --> r |
+| 0x5ea90ab2303c : 0x5ea90ab2303c | 69 --> i |
+| 0x5ea90ab2303d : 0x5ea90ab2303d | 61 --> a |
+| 0x5ea90ab2303e : 0x5ea90ab2303e | 62 --> b |
+| 0x5ea90ab2303f : 0x5ea90ab2303f | 6c --> l |
+| 0x5ea90ab23040 : 0x5ea90ab23040 | 65 --> e |
+| 0x5ea90ab23041 : 0x5ea90ab23041 | 33 --> 3 |
+| 0x5ea90ab23042 : 0x5ea90ab23042 | 76 --> v |
+| 0x5ea90ab23043 : 0x5ea90ab23043 | 61 --> a |
+| 0x5ea90ab23044 : 0x5ea90ab23044 | 72 --> r |
+| 0x5ea90ab23045 : 0x5ea90ab23045 | 69 --> i |
+| 0x5ea90ab23046 : 0x5ea90ab23046 | 61 --> a |
+| 0x5ea90ab23047 : 0x5ea90ab23047 | 62 --> b |
+| 0x5ea90ab23048 : 0x5ea90ab23048 | 6c --> l |
+| 0x5ea90ab23049 : 0x5ea90ab23049 | 65 --> e |
+| 0x5ea90ab2304a : 0x5ea90ab2304a | 33 --> 3 |
+| 0x5ea90ab2304b : 0x5ea90ab2304b | 76 --> v |
+| 0x5ea90ab2304c : 0x5ea90ab2304c | 61 --> a |
+| 0x5ea90ab2304d : 0x5ea90ab2304d | 72 --> r |
+| 0x5ea90ab2304e : 0x5ea90ab2304e | 69 --> i |
+| 0x5ea90ab2304f : 0x5ea90ab2304f | 61 --> a |
+------------------------------------------------
+
+Bloque #5 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23050 : 0x5ea90ab23050 | 76 --> v |
+| 0x5ea90ab23051 : 0x5ea90ab23051 | 61 --> a |
+| 0x5ea90ab23052 : 0x5ea90ab23052 | 72 --> r |
+| 0x5ea90ab23053 : 0x5ea90ab23053 | 69 --> i |
+| 0x5ea90ab23054 : 0x5ea90ab23054 | 61 --> a |
+| 0x5ea90ab23055 : 0x5ea90ab23055 | 62 --> b |
+| 0x5ea90ab23056 : 0x5ea90ab23056 | 6c --> l |
+| 0x5ea90ab23057 : 0x5ea90ab23057 | 65 --> e |
+| 0x5ea90ab23058 : 0x5ea90ab23058 | 33 --> 3 |
+| 0x5ea90ab23059 : 0x5ea90ab23059 | 76 --> v |
+| 0x5ea90ab2305a : 0x5ea90ab2305a | 61 --> a |
+| 0x5ea90ab2305b : 0x5ea90ab2305b | 72 --> r |
+| 0x5ea90ab2305c : 0x5ea90ab2305c | 69 --> i |
+| 0x5ea90ab2305d : 0x5ea90ab2305d | 61 --> a |
+| 0x5ea90ab2305e : 0x5ea90ab2305e | 62 --> b |
+| 0x5ea90ab2305f : 0x5ea90ab2305f | 6c --> l |
+| 0x5ea90ab23060 : 0x5ea90ab23060 | 65 --> e |
+| 0x5ea90ab23061 : 0x5ea90ab23061 | 33 --> 3 |
+| 0x5ea90ab23062 : 0x5ea90ab23062 | 76 --> v |
+| 0x5ea90ab23063 : 0x5ea90ab23063 | 61 --> a |
+| 0x5ea90ab23064 : 0x5ea90ab23064 | 72 --> r |
+| 0x5ea90ab23065 : 0x5ea90ab23065 | 69 --> i |
+| 0x5ea90ab23066 : 0x5ea90ab23066 | 61 --> a |
+| 0x5ea90ab23067 : 0x5ea90ab23067 | 62 --> b |
+| 0x5ea90ab23068 : 0x5ea90ab23068 | 6c --> l |
+| 0x5ea90ab23069 : 0x5ea90ab23069 | 65 --> e |
+| 0x5ea90ab2306a : 0x5ea90ab2306a | 33 --> 3 |
+| 0x5ea90ab2306b : 0x5ea90ab2306b | 76 --> v |
+| 0x5ea90ab2306c : 0x5ea90ab2306c | 61 --> a |
+| 0x5ea90ab2306d : 0x5ea90ab2306d | 72 --> r |
+| 0x5ea90ab2306e : 0x5ea90ab2306e | 69 --> i |
+| 0x5ea90ab2306f : 0x5ea90ab2306f | 61 --> a |
+------------------------------------------------
+
+Bloque #6 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23070 : 0x5ea90ab23070 | 76 --> v |
+| 0x5ea90ab23071 : 0x5ea90ab23071 | 61 --> a |
+| 0x5ea90ab23072 : 0x5ea90ab23072 | 72 --> r |
+| 0x5ea90ab23073 : 0x5ea90ab23073 | 69 --> i |
+| 0x5ea90ab23074 : 0x5ea90ab23074 | 61 --> a |
+| 0x5ea90ab23075 : 0x5ea90ab23075 | 62 --> b |
+| 0x5ea90ab23076 : 0x5ea90ab23076 | 6c --> l |
+| 0x5ea90ab23077 : 0x5ea90ab23077 | 65 --> e |
+| 0x5ea90ab23078 : 0x5ea90ab23078 | 31 --> 1 |
+| 0x5ea90ab23079 : 0x5ea90ab23079 | 76 --> v |
+| 0x5ea90ab2307a : 0x5ea90ab2307a | 61 --> a |
+| 0x5ea90ab2307b : 0x5ea90ab2307b | 72 --> r |
+| 0x5ea90ab2307c : 0x5ea90ab2307c | 69 --> i |
+| 0x5ea90ab2307d : 0x5ea90ab2307d | 61 --> a |
+| 0x5ea90ab2307e : 0x5ea90ab2307e | 62 --> b |
+| 0x5ea90ab2307f : 0x5ea90ab2307f | 6c --> l |
+| 0x5ea90ab23080 : 0x5ea90ab23080 | 65 --> e |
+| 0x5ea90ab23081 : 0x5ea90ab23081 | 31 --> 1 |
+| 0x5ea90ab23082 : 0x5ea90ab23082 | 76 --> v |
+| 0x5ea90ab23083 : 0x5ea90ab23083 | 61 --> a |
+| 0x5ea90ab23084 : 0x5ea90ab23084 | 72 --> r |
+| 0x5ea90ab23085 : 0x5ea90ab23085 | 69 --> i |
+| 0x5ea90ab23086 : 0x5ea90ab23086 | 61 --> a |
+| 0x5ea90ab23087 : 0x5ea90ab23087 | 62 --> b |
+| 0x5ea90ab23088 : 0x5ea90ab23088 | 6c --> l |
+| 0x5ea90ab23089 : 0x5ea90ab23089 | 65 --> e |
+| 0x5ea90ab2308a : 0x5ea90ab2308a | 31 --> 1 |
+| 0x5ea90ab2308b : 0x5ea90ab2308b | 76 --> v |
+| 0x5ea90ab2308c : 0x5ea90ab2308c | 61 --> a |
+| 0x5ea90ab2308d : 0x5ea90ab2308d | 72 --> r |
+| 0x5ea90ab2308e : 0x5ea90ab2308e | 69 --> i |
+| 0x5ea90ab2308f : 0x5ea90ab2308f | 61 --> a |
+------------------------------------------------
+
+Bloque #7 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23090 : 0x5ea90ab23090 | 76 --> v |
+| 0x5ea90ab23091 : 0x5ea90ab23091 | 61 --> a |
+| 0x5ea90ab23092 : 0x5ea90ab23092 | 72 --> r |
+| 0x5ea90ab23093 : 0x5ea90ab23093 | 69 --> i |
+| 0x5ea90ab23094 : 0x5ea90ab23094 | 61 --> a |
+| 0x5ea90ab23095 : 0x5ea90ab23095 | 62 --> b |
+| 0x5ea90ab23096 : 0x5ea90ab23096 | 6c --> l |
+| 0x5ea90ab23097 : 0x5ea90ab23097 | 65 --> e |
+| 0x5ea90ab23098 : 0x5ea90ab23098 | 31 --> 1 |
+| 0x5ea90ab23099 : 0x5ea90ab23099 | 76 --> v |
+| 0x5ea90ab2309a : 0x5ea90ab2309a | 61 --> a |
+| 0x5ea90ab2309b : 0x5ea90ab2309b | 72 --> r |
+| 0x5ea90ab2309c : 0x5ea90ab2309c | 69 --> i |
+| 0x5ea90ab2309d : 0x5ea90ab2309d | 61 --> a |
+| 0x5ea90ab2309e : 0x5ea90ab2309e | 62 --> b |
+| 0x5ea90ab2309f : 0x5ea90ab2309f | 6c --> l |
+| 0x5ea90ab230a0 : 0x5ea90ab230a0 | 65 --> e |
+| 0x5ea90ab230a1 : 0x5ea90ab230a1 | 31 --> 1 |
+| 0x5ea90ab230a2 : 0x5ea90ab230a2 | 76 --> v |
+| 0x5ea90ab230a3 : 0x5ea90ab230a3 | 61 --> a |
+| 0x5ea90ab230a4 : 0x5ea90ab230a4 | 72 --> r |
+| 0x5ea90ab230a5 : 0x5ea90ab230a5 | 69 --> i |
+| 0x5ea90ab230a6 : 0x5ea90ab230a6 | 61 --> a |
+| 0x5ea90ab230a7 : 0x5ea90ab230a7 | 62 --> b |
+| 0x5ea90ab230a8 : 0x5ea90ab230a8 | 6c --> l |
+| 0x5ea90ab230a9 : 0x5ea90ab230a9 | 65 --> e |
+| 0x5ea90ab230aa : 0x5ea90ab230aa | 31 --> 1 |
+| 0x5ea90ab230ab : 0x5ea90ab230ab | 76 --> v |
+| 0x5ea90ab230ac : 0x5ea90ab230ac | 61 --> a |
+| 0x5ea90ab230ad : 0x5ea90ab230ad | 72 --> r |
+| 0x5ea90ab230ae : 0x5ea90ab230ae | 69 --> i |
+| 0x5ea90ab230af : 0x5ea90ab230af | 61 --> a |
+------------------------------------------------
+
+Bloque #8 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab230b0 : 0x5ea90ab230b0 | 76 --> v |
+| 0x5ea90ab230b1 : 0x5ea90ab230b1 | 61 --> a |
+| 0x5ea90ab230b2 : 0x5ea90ab230b2 | 72 --> r |
+| 0x5ea90ab230b3 : 0x5ea90ab230b3 | 69 --> i |
+| 0x5ea90ab230b4 : 0x5ea90ab230b4 | 61 --> a |
+| 0x5ea90ab230b5 : 0x5ea90ab230b5 | 62 --> b |
+| 0x5ea90ab230b6 : 0x5ea90ab230b6 | 6c --> l |
+| 0x5ea90ab230b7 : 0x5ea90ab230b7 | 65 --> e |
+| 0x5ea90ab230b8 : 0x5ea90ab230b8 | 31 --> 1 |
+| 0x5ea90ab230b9 : 0x5ea90ab230b9 | 76 --> v |
+| 0x5ea90ab230ba : 0x5ea90ab230ba | 61 --> a |
+| 0x5ea90ab230bb : 0x5ea90ab230bb | 72 --> r |
+| 0x5ea90ab230bc : 0x5ea90ab230bc | 69 --> i |
+| 0x5ea90ab230bd : 0x5ea90ab230bd | 61 --> a |
+| 0x5ea90ab230be : 0x5ea90ab230be | 62 --> b |
+| 0x5ea90ab230bf : 0x5ea90ab230bf | 6c --> l |
+| 0x5ea90ab230c0 : 0x5ea90ab230c0 | 65 --> e |
+| 0x5ea90ab230c1 : 0x5ea90ab230c1 | 31 --> 1 |
+| 0x5ea90ab230c2 : 0x5ea90ab230c2 | 76 --> v |
+| 0x5ea90ab230c3 : 0x5ea90ab230c3 | 61 --> a |
+| 0x5ea90ab230c4 : 0x5ea90ab230c4 | 72 --> r |
+| 0x5ea90ab230c5 : 0x5ea90ab230c5 | 69 --> i |
+| 0x5ea90ab230c6 : 0x5ea90ab230c6 | 61 --> a |
+| 0x5ea90ab230c7 : 0x5ea90ab230c7 | 62 --> b |
+| 0x5ea90ab230c8 : 0x5ea90ab230c8 | 6c --> l |
+| 0x5ea90ab230c9 : 0x5ea90ab230c9 | 65 --> e |
+| 0x5ea90ab230ca : 0x5ea90ab230ca | 31 --> 1 |
+| 0x5ea90ab230cb : 0x5ea90ab230cb | 76 --> v |
+| 0x5ea90ab230cc : 0x5ea90ab230cc | 61 --> a |
+| 0x5ea90ab230cd : 0x5ea90ab230cd | 72 --> r |
+| 0x5ea90ab230ce : 0x5ea90ab230ce | 69 --> i |
+| 0x5ea90ab230cf : 0x5ea90ab230cf | 61 --> a |
+------------------------------------------------
+
+Bloque #9 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab230d0 : 0x5ea90ab230d0 | 76 --> v |
+| 0x5ea90ab230d1 : 0x5ea90ab230d1 | 61 --> a |
+| 0x5ea90ab230d2 : 0x5ea90ab230d2 | 72 --> r |
+| 0x5ea90ab230d3 : 0x5ea90ab230d3 | 69 --> i |
+| 0x5ea90ab230d4 : 0x5ea90ab230d4 | 61 --> a |
+| 0x5ea90ab230d5 : 0x5ea90ab230d5 | 62 --> b |
+| 0x5ea90ab230d6 : 0x5ea90ab230d6 | 6c --> l |
+| 0x5ea90ab230d7 : 0x5ea90ab230d7 | 65 --> e |
+| 0x5ea90ab230d8 : 0x5ea90ab230d8 | 31 --> 1 |
+| 0x5ea90ab230d9 : 0x5ea90ab230d9 | 76 --> v |
+| 0x5ea90ab230da : 0x5ea90ab230da | 61 --> a |
+| 0x5ea90ab230db : 0x5ea90ab230db | 72 --> r |
+| 0x5ea90ab230dc : 0x5ea90ab230dc | 69 --> i |
+| 0x5ea90ab230dd : 0x5ea90ab230dd | 61 --> a |
+| 0x5ea90ab230de : 0x5ea90ab230de | 62 --> b |
+| 0x5ea90ab230df : 0x5ea90ab230df | 6c --> l |
+| 0x5ea90ab230e0 : 0x5ea90ab230e0 | 65 --> e |
+| 0x5ea90ab230e1 : 0x5ea90ab230e1 | 31 --> 1 |
+| 0x5ea90ab230e2 : 0x5ea90ab230e2 | 76 --> v |
+| 0x5ea90ab230e3 : 0x5ea90ab230e3 | 61 --> a |
+| 0x5ea90ab230e4 : 0x5ea90ab230e4 | 72 --> r |
+| 0x5ea90ab230e5 : 0x5ea90ab230e5 | 69 --> i |
+| 0x5ea90ab230e6 : 0x5ea90ab230e6 | 61 --> a |
+| 0x5ea90ab230e7 : 0x5ea90ab230e7 | 62 --> b |
+| 0x5ea90ab230e8 : 0x5ea90ab230e8 | 6c --> l |
+| 0x5ea90ab230e9 : 0x5ea90ab230e9 | 65 --> e |
+| 0x5ea90ab230ea : 0x5ea90ab230ea | 31 --> 1 |
+| 0x5ea90ab230eb : 0x5ea90ab230eb | 76 --> v |
+| 0x5ea90ab230ec : 0x5ea90ab230ec | 61 --> a |
+| 0x5ea90ab230ed : 0x5ea90ab230ed | 72 --> r |
+| 0x5ea90ab230ee : 0x5ea90ab230ee | 69 --> i |
+| 0x5ea90ab230ef : 0x5ea90ab230ef | 61 --> a |
+------------------------------------------------
+
+Bloque #10 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab230f0 : 0x5ea90ab230f0 | 76 --> v |
+| 0x5ea90ab230f1 : 0x5ea90ab230f1 | 61 --> a |
+| 0x5ea90ab230f2 : 0x5ea90ab230f2 | 72 --> r |
+| 0x5ea90ab230f3 : 0x5ea90ab230f3 | 69 --> i |
+| 0x5ea90ab230f4 : 0x5ea90ab230f4 | 61 --> a |
+| 0x5ea90ab230f5 : 0x5ea90ab230f5 | 62 --> b |
+| 0x5ea90ab230f6 : 0x5ea90ab230f6 | 6c --> l |
+| 0x5ea90ab230f7 : 0x5ea90ab230f7 | 65 --> e |
+| 0x5ea90ab230f8 : 0x5ea90ab230f8 | 31 --> 1 |
+| 0x5ea90ab230f9 : 0x5ea90ab230f9 | 76 --> v |
+| 0x5ea90ab230fa : 0x5ea90ab230fa | 61 --> a |
+| 0x5ea90ab230fb : 0x5ea90ab230fb | 72 --> r |
+| 0x5ea90ab230fc : 0x5ea90ab230fc | 69 --> i |
+| 0x5ea90ab230fd : 0x5ea90ab230fd | 61 --> a |
+| 0x5ea90ab230fe : 0x5ea90ab230fe | 62 --> b |
+| 0x5ea90ab230ff : 0x5ea90ab230ff | 6c --> l |
+| 0x5ea90ab23100 : 0x5ea90ab23100 | 65 --> e |
+| 0x5ea90ab23101 : 0x5ea90ab23101 | 31 --> 1 |
+| 0x5ea90ab23102 : 0x5ea90ab23102 | 76 --> v |
+| 0x5ea90ab23103 : 0x5ea90ab23103 | 61 --> a |
+| 0x5ea90ab23104 : 0x5ea90ab23104 | 72 --> r |
+| 0x5ea90ab23105 : 0x5ea90ab23105 | 69 --> i |
+| 0x5ea90ab23106 : 0x5ea90ab23106 | 61 --> a |
+| 0x5ea90ab23107 : 0x5ea90ab23107 | 62 --> b |
+| 0x5ea90ab23108 : 0x5ea90ab23108 | 6c --> l |
+| 0x5ea90ab23109 : 0x5ea90ab23109 | 65 --> e |
+| 0x5ea90ab2310a : 0x5ea90ab2310a | 31 --> 1 |
+| 0x5ea90ab2310b : 0x5ea90ab2310b | 76 --> v |
+| 0x5ea90ab2310c : 0x5ea90ab2310c | 61 --> a |
+| 0x5ea90ab2310d : 0x5ea90ab2310d | 72 --> r |
+| 0x5ea90ab2310e : 0x5ea90ab2310e | 69 --> i |
+| 0x5ea90ab2310f : 0x5ea90ab2310f | 61 --> a |
+------------------------------------------------
+
+Bloque #11 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23110 : 0x5ea90ab23110 | 76 --> v |
+| 0x5ea90ab23111 : 0x5ea90ab23111 | 61 --> a |
+| 0x5ea90ab23112 : 0x5ea90ab23112 | 72 --> r |
+| 0x5ea90ab23113 : 0x5ea90ab23113 | 69 --> i |
+| 0x5ea90ab23114 : 0x5ea90ab23114 | 61 --> a |
+| 0x5ea90ab23115 : 0x5ea90ab23115 | 62 --> b |
+| 0x5ea90ab23116 : 0x5ea90ab23116 | 6c --> l |
+| 0x5ea90ab23117 : 0x5ea90ab23117 | 65 --> e |
+| 0x5ea90ab23118 : 0x5ea90ab23118 | 31 --> 1 |
+| 0x5ea90ab23119 : 0x5ea90ab23119 | 76 --> v |
+| 0x5ea90ab2311a : 0x5ea90ab2311a | 61 --> a |
+| 0x5ea90ab2311b : 0x5ea90ab2311b | 72 --> r |
+| 0x5ea90ab2311c : 0x5ea90ab2311c | 69 --> i |
+| 0x5ea90ab2311d : 0x5ea90ab2311d | 61 --> a |
+| 0x5ea90ab2311e : 0x5ea90ab2311e | 62 --> b |
+| 0x5ea90ab2311f : 0x5ea90ab2311f | 6c --> l |
+| 0x5ea90ab23120 : 0x5ea90ab23120 | 65 --> e |
+| 0x5ea90ab23121 : 0x5ea90ab23121 | 31 --> 1 |
+| 0x5ea90ab23122 : 0x5ea90ab23122 | 76 --> v |
+| 0x5ea90ab23123 : 0x5ea90ab23123 | 61 --> a |
+| 0x5ea90ab23124 : 0x5ea90ab23124 | 72 --> r |
+| 0x5ea90ab23125 : 0x5ea90ab23125 | 69 --> i |
+| 0x5ea90ab23126 : 0x5ea90ab23126 | 61 --> a |
+| 0x5ea90ab23127 : 0x5ea90ab23127 | 62 --> b |
+| 0x5ea90ab23128 : 0x5ea90ab23128 | 6c --> l |
+| 0x5ea90ab23129 : 0x5ea90ab23129 | 65 --> e |
+| 0x5ea90ab2312a : 0x5ea90ab2312a | 31 --> 1 |
+| 0x5ea90ab2312b : 0x5ea90ab2312b | 76 --> v |
+| 0x5ea90ab2312c : 0x5ea90ab2312c | 61 --> a |
+| 0x5ea90ab2312d : 0x5ea90ab2312d | 72 --> r |
+| 0x5ea90ab2312e : 0x5ea90ab2312e | 69 --> i |
+| 0x5ea90ab2312f : 0x5ea90ab2312f | 61 --> a |
+------------------------------------------------
+
+Bloque #12 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23130 : 0x5ea90ab23130 | 76 --> v |
+| 0x5ea90ab23131 : 0x5ea90ab23131 | 61 --> a |
+| 0x5ea90ab23132 : 0x5ea90ab23132 | 72 --> r |
+| 0x5ea90ab23133 : 0x5ea90ab23133 | 69 --> i |
+| 0x5ea90ab23134 : 0x5ea90ab23134 | 61 --> a |
+| 0x5ea90ab23135 : 0x5ea90ab23135 | 62 --> b |
+| 0x5ea90ab23136 : 0x5ea90ab23136 | 6c --> l |
+| 0x5ea90ab23137 : 0x5ea90ab23137 | 65 --> e |
+| 0x5ea90ab23138 : 0x5ea90ab23138 | 31 --> 1 |
+| 0x5ea90ab23139 : 0x5ea90ab23139 | 76 --> v |
+| 0x5ea90ab2313a : 0x5ea90ab2313a | 61 --> a |
+| 0x5ea90ab2313b : 0x5ea90ab2313b | 72 --> r |
+| 0x5ea90ab2313c : 0x5ea90ab2313c | 69 --> i |
+| 0x5ea90ab2313d : 0x5ea90ab2313d | 61 --> a |
+| 0x5ea90ab2313e : 0x5ea90ab2313e | 62 --> b |
+| 0x5ea90ab2313f : 0x5ea90ab2313f | 6c --> l |
+| 0x5ea90ab23140 : 0x5ea90ab23140 | 65 --> e |
+| 0x5ea90ab23141 : 0x5ea90ab23141 | 31 --> 1 |
+| 0x5ea90ab23142 : 0x5ea90ab23142 | 76 --> v |
+| 0x5ea90ab23143 : 0x5ea90ab23143 | 61 --> a |
+| 0x5ea90ab23144 : 0x5ea90ab23144 | 72 --> r |
+| 0x5ea90ab23145 : 0x5ea90ab23145 | 69 --> i |
+| 0x5ea90ab23146 : 0x5ea90ab23146 | 61 --> a |
+| 0x5ea90ab23147 : 0x5ea90ab23147 | 62 --> b |
+| 0x5ea90ab23148 : 0x5ea90ab23148 | 6c --> l |
+| 0x5ea90ab23149 : 0x5ea90ab23149 | 65 --> e |
+| 0x5ea90ab2314a : 0x5ea90ab2314a | 31 --> 1 |
+| 0x5ea90ab2314b : 0x5ea90ab2314b | 76 --> v |
+| 0x5ea90ab2314c : 0x5ea90ab2314c | 61 --> a |
+| 0x5ea90ab2314d : 0x5ea90ab2314d | 72 --> r |
+| 0x5ea90ab2314e : 0x5ea90ab2314e | 69 --> i |
+| 0x5ea90ab2314f : 0x5ea90ab2314f | 61 --> a |
+------------------------------------------------
+
+Bloque #13 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23150 : 0x5ea90ab23150 | 76 --> v |
+| 0x5ea90ab23151 : 0x5ea90ab23151 | 61 --> a |
+| 0x5ea90ab23152 : 0x5ea90ab23152 | 72 --> r |
+| 0x5ea90ab23153 : 0x5ea90ab23153 | 69 --> i |
+| 0x5ea90ab23154 : 0x5ea90ab23154 | 61 --> a |
+| 0x5ea90ab23155 : 0x5ea90ab23155 | 62 --> b |
+| 0x5ea90ab23156 : 0x5ea90ab23156 | 6c --> l |
+| 0x5ea90ab23157 : 0x5ea90ab23157 | 65 --> e |
+| 0x5ea90ab23158 : 0x5ea90ab23158 | 31 --> 1 |
+| 0x5ea90ab23159 : 0x5ea90ab23159 | 76 --> v |
+| 0x5ea90ab2315a : 0x5ea90ab2315a | 61 --> a |
+| 0x5ea90ab2315b : 0x5ea90ab2315b | 72 --> r |
+| 0x5ea90ab2315c : 0x5ea90ab2315c | 69 --> i |
+| 0x5ea90ab2315d : 0x5ea90ab2315d | 61 --> a |
+| 0x5ea90ab2315e : 0x5ea90ab2315e | 62 --> b |
+| 0x5ea90ab2315f : 0x5ea90ab2315f | 6c --> l |
+| 0x5ea90ab23160 : 0x5ea90ab23160 | 65 --> e |
+| 0x5ea90ab23161 : 0x5ea90ab23161 | 31 --> 1 |
+| 0x5ea90ab23162 : 0x5ea90ab23162 | 76 --> v |
+| 0x5ea90ab23163 : 0x5ea90ab23163 | 61 --> a |
+| 0x5ea90ab23164 : 0x5ea90ab23164 | 72 --> r |
+| 0x5ea90ab23165 : 0x5ea90ab23165 | 69 --> i |
+| 0x5ea90ab23166 : 0x5ea90ab23166 | 61 --> a |
+| 0x5ea90ab23167 : 0x5ea90ab23167 | 62 --> b |
+| 0x5ea90ab23168 : 0x5ea90ab23168 | 6c --> l |
+| 0x5ea90ab23169 : 0x5ea90ab23169 | 65 --> e |
+| 0x5ea90ab2316a : 0x5ea90ab2316a | 31 --> 1 |
+| 0x5ea90ab2316b : 0x5ea90ab2316b | 76 --> v |
+| 0x5ea90ab2316c : 0x5ea90ab2316c | 61 --> a |
+| 0x5ea90ab2316d : 0x5ea90ab2316d | 72 --> r |
+| 0x5ea90ab2316e : 0x5ea90ab2316e | 69 --> i |
+| 0x5ea90ab2316f : 0x5ea90ab2316f | 61 --> a |
+------------------------------------------------
+
+Bloque #14 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23170 : 0x5ea90ab23170 | 76 --> v |
+| 0x5ea90ab23171 : 0x5ea90ab23171 | 61 --> a |
+| 0x5ea90ab23172 : 0x5ea90ab23172 | 72 --> r |
+| 0x5ea90ab23173 : 0x5ea90ab23173 | 69 --> i |
+| 0x5ea90ab23174 : 0x5ea90ab23174 | 61 --> a |
+| 0x5ea90ab23175 : 0x5ea90ab23175 | 62 --> b |
+| 0x5ea90ab23176 : 0x5ea90ab23176 | 6c --> l |
+| 0x5ea90ab23177 : 0x5ea90ab23177 | 65 --> e |
+| 0x5ea90ab23178 : 0x5ea90ab23178 | 31 --> 1 |
+| 0x5ea90ab23179 : 0x5ea90ab23179 | 76 --> v |
+| 0x5ea90ab2317a : 0x5ea90ab2317a | 61 --> a |
+| 0x5ea90ab2317b : 0x5ea90ab2317b | 72 --> r |
+| 0x5ea90ab2317c : 0x5ea90ab2317c | 69 --> i |
+| 0x5ea90ab2317d : 0x5ea90ab2317d | 61 --> a |
+| 0x5ea90ab2317e : 0x5ea90ab2317e | 62 --> b |
+| 0x5ea90ab2317f : 0x5ea90ab2317f | 6c --> l |
+| 0x5ea90ab23180 : 0x5ea90ab23180 | 65 --> e |
+| 0x5ea90ab23181 : 0x5ea90ab23181 | 31 --> 1 |
+| 0x5ea90ab23182 : 0x5ea90ab23182 | 76 --> v |
+| 0x5ea90ab23183 : 0x5ea90ab23183 | 61 --> a |
+| 0x5ea90ab23184 : 0x5ea90ab23184 | 72 --> r |
+| 0x5ea90ab23185 : 0x5ea90ab23185 | 69 --> i |
+| 0x5ea90ab23186 : 0x5ea90ab23186 | 61 --> a |
+| 0x5ea90ab23187 : 0x5ea90ab23187 | 62 --> b |
+| 0x5ea90ab23188 : 0x5ea90ab23188 | 6c --> l |
+| 0x5ea90ab23189 : 0x5ea90ab23189 | 65 --> e |
+| 0x5ea90ab2318a : 0x5ea90ab2318a | 31 --> 1 |
+| 0x5ea90ab2318b : 0x5ea90ab2318b | 76 --> v |
+| 0x5ea90ab2318c : 0x5ea90ab2318c | 61 --> a |
+| 0x5ea90ab2318d : 0x5ea90ab2318d | 72 --> r |
+| 0x5ea90ab2318e : 0x5ea90ab2318e | 69 --> i |
+| 0x5ea90ab2318f : 0x5ea90ab2318f | 61 --> a |
+------------------------------------------------
+
+Bloque #15 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x5ea90ab23190 : 0x5ea90ab23190 | 76 --> v |
+| 0x5ea90ab23191 : 0x5ea90ab23191 | 61 --> a |
+| 0x5ea90ab23192 : 0x5ea90ab23192 | 72 --> r |
+| 0x5ea90ab23193 : 0x5ea90ab23193 | 69 --> i |
+| 0x5ea90ab23194 : 0x5ea90ab23194 | 61 --> a |
+| 0x5ea90ab23195 : 0x5ea90ab23195 | 62 --> b |
+| 0x5ea90ab23196 : 0x5ea90ab23196 | 6c --> l |
+| 0x5ea90ab23197 : 0x5ea90ab23197 | 65 --> e |
+| 0x5ea90ab23198 : 0x5ea90ab23198 | 31 --> 1 |
+| 0x5ea90ab23199 : 0x5ea90ab23199 | 76 --> v |
+| 0x5ea90ab2319a : 0x5ea90ab2319a | 61 --> a |
+| 0x5ea90ab2319b : 0x5ea90ab2319b | 72 --> r |
+| 0x5ea90ab2319c : 0x5ea90ab2319c | 69 --> i |
+| 0x5ea90ab2319d : 0x5ea90ab2319d | 61 --> a |
+| 0x5ea90ab2319e : 0x5ea90ab2319e | 62 --> b |
+| 0x5ea90ab2319f : 0x5ea90ab2319f | 6c --> l |
+| 0x5ea90ab231a0 : 0x5ea90ab231a0 | 65 --> e |
+| 0x5ea90ab231a1 : 0x5ea90ab231a1 | 31 --> 1 |
+| 0x5ea90ab231a2 : 0x5ea90ab231a2 | 76 --> v |
+| 0x5ea90ab231a3 : 0x5ea90ab231a3 | 61 --> a |
+| 0x5ea90ab231a4 : 0x5ea90ab231a4 | 72 --> r |
+| 0x5ea90ab231a5 : 0x5ea90ab231a5 | 69 --> i |
+| 0x5ea90ab231a6 : 0x5ea90ab231a6 | 61 --> a |
+| 0x5ea90ab231a7 : 0x5ea90ab231a7 | 62 --> b |
+| 0x5ea90ab231a8 : 0x5ea90ab231a8 | 6c --> l |
+| 0x5ea90ab231a9 : 0x5ea90ab231a9 | 65 --> e |
+| 0x5ea90ab231aa : 0x5ea90ab231aa | 31 --> 1 |
+| 0x5ea90ab231ab : 0x5ea90ab231ab | 76 --> v |
+| 0x5ea90ab231ac : 0x5ea90ab231ac | 61 --> a |
+| 0x5ea90ab231ad : 0x5ea90ab231ad | 72 --> r |
+| 0x5ea90ab231ae : 0x5ea90ab231ae | 69 --> i |
+| 0x5ea90ab231af : 0x5ea90ab231af | 61 --> a |
+------------------------------------------------
+
