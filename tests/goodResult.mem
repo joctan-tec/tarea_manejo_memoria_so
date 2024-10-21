@@ -1,0 +1,18 @@
+# Asignación de memoria para diferentes variables
+ALLOC variable1 64         # Asignación exitosa
+ALLOC variable2 128        # Asignación exitosa
+
+# Liberación de variable2
+FREE variable2             # Liberación exitosa
+
+# Reasignación de variable1 a un nuevo tamaño
+REALLOC variable1 256      # Reasignación exitosa
+
+# Estado actual de las asignaciones
+PRINT
+
+# Liberación de variable1
+FREE variable1             # Liberación exitosa
+
+# Estado final de las asignaciones
+PRINT

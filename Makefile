@@ -40,7 +40,7 @@ run:
 # Ejecutar con un archivo de prueba especificado (si se pasa un argumento)
 test:
 	@echo "Ejecutando prueba con archivo de entrada: $(file) con algoritmo: $(algoritmo)"
-
+	gcc $(CFLAGS) -o $(EXEC) $(SRC_FILES)
 	@if [ -z "$(file)" ]; then \
 	    echo "No se proporcionó un archivo de prueba. Usando archivo predeterminado: $(DEFAULT_INPUT)"; \
 	    make run; \

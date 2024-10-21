@@ -1,0 +1,8 @@
+# Asignación de memoria para variable1
+ALLOC variable1 35         # Asignación exitosa
+
+# Liberación de variable1
+FREE variable1
+
+# Intento de reasignar variable1 a un tamaño mayor
+REALLOC variable1 256      # Fallo (no hay suficiente memoria para la reubicación)

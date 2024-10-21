@@ -1,6 +1,5 @@
 // This file receives the path of the file to be read and returns the execution of the program.
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,21 +7,22 @@
 #include "./memory_manager.h"
 #include "./file_reader.h"
 
-
+#define MEMORY_REQUESTED 512
 
 // Definición de la función principal
 int main(int argc, char *argv[]) {
     
-    // Verificar si se ingresaron los argumentos necesarios
+    /* Verificar si se ingresaron los argumentos necesarios
     if (argc != 3) {
         printf("Error: Debe ingresar el nombre del archivo de operaciones y el algoritmo de asignación de memoria.\n");
         return 1;
     }
-
+     
     const char* nombreArchivo = argv[1];
     const char* algoritmo = argv[2];
-    
-
+    */
+    const char* nombreArchivo = "/home/brenbadi/Documents/tarea_manejo_memoria_so/input/input.mem";
+    const char* algoritmo = "best_fit";
     // Verificar si el archivo de operaciones existe
     if (access(nombreArchivo, F_OK) == -1) {
         printf("Error: El archivo '%s' no existe.\n", nombreArchivo);
@@ -46,7 +46,7 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    size_t total_memory_size = 2048; // 2 KiB
+    size_t total_memory_size = MEMORY_REQUESTED; // 2 KiB
     unsigned char* memory = (unsigned char*)malloc(total_memory_size);
     HashMap* assignments_map = create_hashmap();
     
