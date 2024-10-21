@@ -12,14 +12,14 @@
 // Definición de la función principal
 int main(int argc, char *argv[]) {
     
-    /*// Verificar si se ingresaron los argumentos necesarios
+    // Verificar si se ingresaron los argumentos necesarios
     if (argc != 3) {
         printf("Error: Debe ingresar el nombre del archivo de operaciones y el algoritmo de asignación de memoria.\n");
         return 1;
-    }*/
+    }
      
-    const char* nombreArchivo = "/home/joctan04/Documentos/TEC/Semestre_VII/Sistemas_Operativos/tarea_manejo_memoria_so/input/input.mem";
-    const char* algoritmo = "best_fit";
+    const char* nombreArchivo = argv[1];
+    const char* algoritmo = argv[2];
     
     // Verificar si el archivo de operaciones existe
     if (access(nombreArchivo, F_OK) == -1) {

@@ -1,5 +1,5 @@
 # Asignación de memoria para diferentes variables
-ALLOC var1 32
+ALLOC var1 96
 
 PRINT
 

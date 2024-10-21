@@ -348,6 +348,14 @@ int first_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap
     
     // Buscar los bloques libres necesarios
     MemoryBlock* start_block = find_free_blocks(num_blocks, memory_list);
+
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
+        return 1;
+    }
+
     return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
 
@@ -395,6 +403,14 @@ int best_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap*
     int char_size = size;
     // Buscar el mejor ajuste de bloques libres necesarios
     MemoryBlock* start_block = find_best_fit_blocks(num_blocks, memory_list);
+
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
+        return 1;
+    }
+
     return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
 
@@ -445,8 +461,6 @@ MemoryBlock* find_worst_fit_blocks(int num_blocks, MemoryList* memory_list) {
         current = current->next;
     }
 
-    printf("Worst fit block: %p\n", worst_fit_start->start_address);
-
     return worst_fit_start;
 }
 
@@ -482,6 +496,14 @@ int worst_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap
     int char_size = size;
     // Buscar el peor ajuste de bloques libres necesarios
     MemoryBlock* start_block = find_worst_fit_blocks(num_blocks, memory_list);
+
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
+        return 1;
+    }
+
     return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
 
