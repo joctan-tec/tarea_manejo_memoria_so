@@ -1,5 +1,7 @@
 # Asignación de memoria para variable1
-ALLOC variable1 35         # Asignación exitosa
+# Asignación exitosa
+ALLOC variable1 35         
 
 # Intento de asignar variable2
-ALLOC variable2 128        # Asignación fallida (no hay suficiente memoria)
+# Asignación fallida (no hay suficiente memoria)
+ALLOC variable2 128        

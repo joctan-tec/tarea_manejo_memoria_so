@@ -1,0 +1,14 @@
+Algoritmo Seleccionado: worst_fit
+
+Memoria solicitada al sistema operativo: 128 bytes
+
+Operación: ALLOC, Variable: variable1, Tamaño: 35
+Variable variable1 asignada correctamente
+Variable variable1 asignada correctamente
+Operación: FREE, Variable: variable1
+Liberado 32 bytes en la dirección 0x629226570b40
+Liberado 32 bytes en la dirección 0x629226570b60
+Variable variable1 liberada correctamente
+Operación: REALLOC, Variable: variable1, Tamaño: 256
+Variable variable1 no encontrada
+Error al reasignar la variable variable1

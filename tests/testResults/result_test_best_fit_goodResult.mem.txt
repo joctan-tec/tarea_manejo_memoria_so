@@ -1,0 +1,337 @@
+Algoritmo Seleccionado: best_fit
+
+Memoria solicitada al sistema operativo: 128 bytes
+
+Operación: ALLOC, Variable: variable1, Tamaño: 64
+Variable variable1 asignada correctamente
+Variable variable1 asignada correctamente
+Operación: ALLOC, Variable: variable2, Tamaño: 32
+Variable variable2 asignada correctamente
+Variable variable2 asignada correctamente
+Operación: FREE, Variable: variable2
+Liberado 32 bytes en la dirección 0x64de1833bf70
+Variable variable2 liberada correctamente
+Operación: REALLOC, Variable: variable1, Tamaño: 128
+Liberado 32 bytes en la dirección 0x64de1833bf90
+Liberado 32 bytes en la dirección 0x64de1833bfb0
+Variable variable1 asignada correctamente
+Variable variable1 reasignada correctamente
+Operación: PRINT
+Clave: variable1
+Direcciones:
+  - 0x64de1833bf50
+  - 0x64de1833bf70
+  - 0x64de1833bf90
+  - 0x64de1833bfb0
+
+Bloque #0 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bf50 : 0x64de1833bf50 | 76 --> v |
+| 0x64de1833bf51 : 0x64de1833bf51 | 61 --> a |
+| 0x64de1833bf52 : 0x64de1833bf52 | 72 --> r |
+| 0x64de1833bf53 : 0x64de1833bf53 | 69 --> i |
+| 0x64de1833bf54 : 0x64de1833bf54 | 61 --> a |
+| 0x64de1833bf55 : 0x64de1833bf55 | 62 --> b |
+| 0x64de1833bf56 : 0x64de1833bf56 | 6c --> l |
+| 0x64de1833bf57 : 0x64de1833bf57 | 65 --> e |
+| 0x64de1833bf58 : 0x64de1833bf58 | 31 --> 1 |
+| 0x64de1833bf59 : 0x64de1833bf59 | 76 --> v |
+| 0x64de1833bf5a : 0x64de1833bf5a | 61 --> a |
+| 0x64de1833bf5b : 0x64de1833bf5b | 72 --> r |
+| 0x64de1833bf5c : 0x64de1833bf5c | 69 --> i |
+| 0x64de1833bf5d : 0x64de1833bf5d | 61 --> a |
+| 0x64de1833bf5e : 0x64de1833bf5e | 62 --> b |
+| 0x64de1833bf5f : 0x64de1833bf5f | 6c --> l |
+| 0x64de1833bf60 : 0x64de1833bf60 | 65 --> e |
+| 0x64de1833bf61 : 0x64de1833bf61 | 31 --> 1 |
+| 0x64de1833bf62 : 0x64de1833bf62 | 76 --> v |
+| 0x64de1833bf63 : 0x64de1833bf63 | 61 --> a |
+| 0x64de1833bf64 : 0x64de1833bf64 | 72 --> r |
+| 0x64de1833bf65 : 0x64de1833bf65 | 69 --> i |
+| 0x64de1833bf66 : 0x64de1833bf66 | 61 --> a |
+| 0x64de1833bf67 : 0x64de1833bf67 | 62 --> b |
+| 0x64de1833bf68 : 0x64de1833bf68 | 6c --> l |
+| 0x64de1833bf69 : 0x64de1833bf69 | 65 --> e |
+| 0x64de1833bf6a : 0x64de1833bf6a | 31 --> 1 |
+| 0x64de1833bf6b : 0x64de1833bf6b | 76 --> v |
+| 0x64de1833bf6c : 0x64de1833bf6c | 61 --> a |
+| 0x64de1833bf6d : 0x64de1833bf6d | 72 --> r |
+| 0x64de1833bf6e : 0x64de1833bf6e | 69 --> i |
+| 0x64de1833bf6f : 0x64de1833bf6f | 61 --> a |
+------------------------------------------------
+
+Bloque #1 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bf70 : 0x64de1833bf70 | 76 --> v |
+| 0x64de1833bf71 : 0x64de1833bf71 | 61 --> a |
+| 0x64de1833bf72 : 0x64de1833bf72 | 72 --> r |
+| 0x64de1833bf73 : 0x64de1833bf73 | 69 --> i |
+| 0x64de1833bf74 : 0x64de1833bf74 | 61 --> a |
+| 0x64de1833bf75 : 0x64de1833bf75 | 62 --> b |
+| 0x64de1833bf76 : 0x64de1833bf76 | 6c --> l |
+| 0x64de1833bf77 : 0x64de1833bf77 | 65 --> e |
+| 0x64de1833bf78 : 0x64de1833bf78 | 31 --> 1 |
+| 0x64de1833bf79 : 0x64de1833bf79 | 76 --> v |
+| 0x64de1833bf7a : 0x64de1833bf7a | 61 --> a |
+| 0x64de1833bf7b : 0x64de1833bf7b | 72 --> r |
+| 0x64de1833bf7c : 0x64de1833bf7c | 69 --> i |
+| 0x64de1833bf7d : 0x64de1833bf7d | 61 --> a |
+| 0x64de1833bf7e : 0x64de1833bf7e | 62 --> b |
+| 0x64de1833bf7f : 0x64de1833bf7f | 6c --> l |
+| 0x64de1833bf80 : 0x64de1833bf80 | 65 --> e |
+| 0x64de1833bf81 : 0x64de1833bf81 | 31 --> 1 |
+| 0x64de1833bf82 : 0x64de1833bf82 | 76 --> v |
+| 0x64de1833bf83 : 0x64de1833bf83 | 61 --> a |
+| 0x64de1833bf84 : 0x64de1833bf84 | 72 --> r |
+| 0x64de1833bf85 : 0x64de1833bf85 | 69 --> i |
+| 0x64de1833bf86 : 0x64de1833bf86 | 61 --> a |
+| 0x64de1833bf87 : 0x64de1833bf87 | 62 --> b |
+| 0x64de1833bf88 : 0x64de1833bf88 | 6c --> l |
+| 0x64de1833bf89 : 0x64de1833bf89 | 65 --> e |
+| 0x64de1833bf8a : 0x64de1833bf8a | 31 --> 1 |
+| 0x64de1833bf8b : 0x64de1833bf8b | 76 --> v |
+| 0x64de1833bf8c : 0x64de1833bf8c | 61 --> a |
+| 0x64de1833bf8d : 0x64de1833bf8d | 72 --> r |
+| 0x64de1833bf8e : 0x64de1833bf8e | 69 --> i |
+| 0x64de1833bf8f : 0x64de1833bf8f | 61 --> a |
+------------------------------------------------
+
+Bloque #2 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bf90 : 0x64de1833bf90 | 76 --> v |
+| 0x64de1833bf91 : 0x64de1833bf91 | 61 --> a |
+| 0x64de1833bf92 : 0x64de1833bf92 | 72 --> r |
+| 0x64de1833bf93 : 0x64de1833bf93 | 69 --> i |
+| 0x64de1833bf94 : 0x64de1833bf94 | 61 --> a |
+| 0x64de1833bf95 : 0x64de1833bf95 | 62 --> b |
+| 0x64de1833bf96 : 0x64de1833bf96 | 6c --> l |
+| 0x64de1833bf97 : 0x64de1833bf97 | 65 --> e |
+| 0x64de1833bf98 : 0x64de1833bf98 | 31 --> 1 |
+| 0x64de1833bf99 : 0x64de1833bf99 | 76 --> v |
+| 0x64de1833bf9a : 0x64de1833bf9a | 61 --> a |
+| 0x64de1833bf9b : 0x64de1833bf9b | 72 --> r |
+| 0x64de1833bf9c : 0x64de1833bf9c | 69 --> i |
+| 0x64de1833bf9d : 0x64de1833bf9d | 61 --> a |
+| 0x64de1833bf9e : 0x64de1833bf9e | 62 --> b |
+| 0x64de1833bf9f : 0x64de1833bf9f | 6c --> l |
+| 0x64de1833bfa0 : 0x64de1833bfa0 | 65 --> e |
+| 0x64de1833bfa1 : 0x64de1833bfa1 | 31 --> 1 |
+| 0x64de1833bfa2 : 0x64de1833bfa2 | 76 --> v |
+| 0x64de1833bfa3 : 0x64de1833bfa3 | 61 --> a |
+| 0x64de1833bfa4 : 0x64de1833bfa4 | 72 --> r |
+| 0x64de1833bfa5 : 0x64de1833bfa5 | 69 --> i |
+| 0x64de1833bfa6 : 0x64de1833bfa6 | 61 --> a |
+| 0x64de1833bfa7 : 0x64de1833bfa7 | 62 --> b |
+| 0x64de1833bfa8 : 0x64de1833bfa8 | 6c --> l |
+| 0x64de1833bfa9 : 0x64de1833bfa9 | 65 --> e |
+| 0x64de1833bfaa : 0x64de1833bfaa | 31 --> 1 |
+| 0x64de1833bfab : 0x64de1833bfab | 76 --> v |
+| 0x64de1833bfac : 0x64de1833bfac | 61 --> a |
+| 0x64de1833bfad : 0x64de1833bfad | 72 --> r |
+| 0x64de1833bfae : 0x64de1833bfae | 69 --> i |
+| 0x64de1833bfaf : 0x64de1833bfaf | 61 --> a |
+------------------------------------------------
+
+Bloque #3 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bfb0 : 0x64de1833bfb0 | 76 --> v |
+| 0x64de1833bfb1 : 0x64de1833bfb1 | 61 --> a |
+| 0x64de1833bfb2 : 0x64de1833bfb2 | 72 --> r |
+| 0x64de1833bfb3 : 0x64de1833bfb3 | 69 --> i |
+| 0x64de1833bfb4 : 0x64de1833bfb4 | 61 --> a |
+| 0x64de1833bfb5 : 0x64de1833bfb5 | 62 --> b |
+| 0x64de1833bfb6 : 0x64de1833bfb6 | 6c --> l |
+| 0x64de1833bfb7 : 0x64de1833bfb7 | 65 --> e |
+| 0x64de1833bfb8 : 0x64de1833bfb8 | 31 --> 1 |
+| 0x64de1833bfb9 : 0x64de1833bfb9 | 76 --> v |
+| 0x64de1833bfba : 0x64de1833bfba | 61 --> a |
+| 0x64de1833bfbb : 0x64de1833bfbb | 72 --> r |
+| 0x64de1833bfbc : 0x64de1833bfbc | 69 --> i |
+| 0x64de1833bfbd : 0x64de1833bfbd | 61 --> a |
+| 0x64de1833bfbe : 0x64de1833bfbe | 62 --> b |
+| 0x64de1833bfbf : 0x64de1833bfbf | 6c --> l |
+| 0x64de1833bfc0 : 0x64de1833bfc0 | 65 --> e |
+| 0x64de1833bfc1 : 0x64de1833bfc1 | 31 --> 1 |
+| 0x64de1833bfc2 : 0x64de1833bfc2 | 76 --> v |
+| 0x64de1833bfc3 : 0x64de1833bfc3 | 61 --> a |
+| 0x64de1833bfc4 : 0x64de1833bfc4 | 72 --> r |
+| 0x64de1833bfc5 : 0x64de1833bfc5 | 69 --> i |
+| 0x64de1833bfc6 : 0x64de1833bfc6 | 61 --> a |
+| 0x64de1833bfc7 : 0x64de1833bfc7 | 62 --> b |
+| 0x64de1833bfc8 : 0x64de1833bfc8 | 6c --> l |
+| 0x64de1833bfc9 : 0x64de1833bfc9 | 65 --> e |
+| 0x64de1833bfca : 0x64de1833bfca | 31 --> 1 |
+| 0x64de1833bfcb : 0x64de1833bfcb | 76 --> v |
+| 0x64de1833bfcc : 0x64de1833bfcc | 61 --> a |
+| 0x64de1833bfcd : 0x64de1833bfcd | 72 --> r |
+| 0x64de1833bfce : 0x64de1833bfce | 69 --> i |
+| 0x64de1833bfcf : 0x64de1833bfcf | 61 --> a |
+------------------------------------------------
+
+Operación: FREE, Variable: variable1
+Liberado 32 bytes en la dirección 0x64de1833bf50
+Liberado 32 bytes en la dirección 0x64de1833bf70
+Liberado 32 bytes en la dirección 0x64de1833bf90
+Liberado 32 bytes en la dirección 0x64de1833bfb0
+Variable variable1 liberada correctamente
+Operación: PRINT
+Bloque #0 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bf50 : 0x64de1833bf50 | 76 --> v |
+| 0x64de1833bf51 : 0x64de1833bf51 | 61 --> a |
+| 0x64de1833bf52 : 0x64de1833bf52 | 72 --> r |
+| 0x64de1833bf53 : 0x64de1833bf53 | 69 --> i |
+| 0x64de1833bf54 : 0x64de1833bf54 | 61 --> a |
+| 0x64de1833bf55 : 0x64de1833bf55 | 62 --> b |
+| 0x64de1833bf56 : 0x64de1833bf56 | 6c --> l |
+| 0x64de1833bf57 : 0x64de1833bf57 | 65 --> e |
+| 0x64de1833bf58 : 0x64de1833bf58 | 31 --> 1 |
+| 0x64de1833bf59 : 0x64de1833bf59 | 76 --> v |
+| 0x64de1833bf5a : 0x64de1833bf5a | 61 --> a |
+| 0x64de1833bf5b : 0x64de1833bf5b | 72 --> r |
+| 0x64de1833bf5c : 0x64de1833bf5c | 69 --> i |
+| 0x64de1833bf5d : 0x64de1833bf5d | 61 --> a |
+| 0x64de1833bf5e : 0x64de1833bf5e | 62 --> b |
+| 0x64de1833bf5f : 0x64de1833bf5f | 6c --> l |
+| 0x64de1833bf60 : 0x64de1833bf60 | 65 --> e |
+| 0x64de1833bf61 : 0x64de1833bf61 | 31 --> 1 |
+| 0x64de1833bf62 : 0x64de1833bf62 | 76 --> v |
+| 0x64de1833bf63 : 0x64de1833bf63 | 61 --> a |
+| 0x64de1833bf64 : 0x64de1833bf64 | 72 --> r |
+| 0x64de1833bf65 : 0x64de1833bf65 | 69 --> i |
+| 0x64de1833bf66 : 0x64de1833bf66 | 61 --> a |
+| 0x64de1833bf67 : 0x64de1833bf67 | 62 --> b |
+| 0x64de1833bf68 : 0x64de1833bf68 | 6c --> l |
+| 0x64de1833bf69 : 0x64de1833bf69 | 65 --> e |
+| 0x64de1833bf6a : 0x64de1833bf6a | 31 --> 1 |
+| 0x64de1833bf6b : 0x64de1833bf6b | 76 --> v |
+| 0x64de1833bf6c : 0x64de1833bf6c | 61 --> a |
+| 0x64de1833bf6d : 0x64de1833bf6d | 72 --> r |
+| 0x64de1833bf6e : 0x64de1833bf6e | 69 --> i |
+| 0x64de1833bf6f : 0x64de1833bf6f | 61 --> a |
+------------------------------------------------
+
+Bloque #1 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bf70 : 0x64de1833bf70 | 76 --> v |
+| 0x64de1833bf71 : 0x64de1833bf71 | 61 --> a |
+| 0x64de1833bf72 : 0x64de1833bf72 | 72 --> r |
+| 0x64de1833bf73 : 0x64de1833bf73 | 69 --> i |
+| 0x64de1833bf74 : 0x64de1833bf74 | 61 --> a |
+| 0x64de1833bf75 : 0x64de1833bf75 | 62 --> b |
+| 0x64de1833bf76 : 0x64de1833bf76 | 6c --> l |
+| 0x64de1833bf77 : 0x64de1833bf77 | 65 --> e |
+| 0x64de1833bf78 : 0x64de1833bf78 | 31 --> 1 |
+| 0x64de1833bf79 : 0x64de1833bf79 | 76 --> v |
+| 0x64de1833bf7a : 0x64de1833bf7a | 61 --> a |
+| 0x64de1833bf7b : 0x64de1833bf7b | 72 --> r |
+| 0x64de1833bf7c : 0x64de1833bf7c | 69 --> i |
+| 0x64de1833bf7d : 0x64de1833bf7d | 61 --> a |
+| 0x64de1833bf7e : 0x64de1833bf7e | 62 --> b |
+| 0x64de1833bf7f : 0x64de1833bf7f | 6c --> l |
+| 0x64de1833bf80 : 0x64de1833bf80 | 65 --> e |
+| 0x64de1833bf81 : 0x64de1833bf81 | 31 --> 1 |
+| 0x64de1833bf82 : 0x64de1833bf82 | 76 --> v |
+| 0x64de1833bf83 : 0x64de1833bf83 | 61 --> a |
+| 0x64de1833bf84 : 0x64de1833bf84 | 72 --> r |
+| 0x64de1833bf85 : 0x64de1833bf85 | 69 --> i |
+| 0x64de1833bf86 : 0x64de1833bf86 | 61 --> a |
+| 0x64de1833bf87 : 0x64de1833bf87 | 62 --> b |
+| 0x64de1833bf88 : 0x64de1833bf88 | 6c --> l |
+| 0x64de1833bf89 : 0x64de1833bf89 | 65 --> e |
+| 0x64de1833bf8a : 0x64de1833bf8a | 31 --> 1 |
+| 0x64de1833bf8b : 0x64de1833bf8b | 76 --> v |
+| 0x64de1833bf8c : 0x64de1833bf8c | 61 --> a |
+| 0x64de1833bf8d : 0x64de1833bf8d | 72 --> r |
+| 0x64de1833bf8e : 0x64de1833bf8e | 69 --> i |
+| 0x64de1833bf8f : 0x64de1833bf8f | 61 --> a |
+------------------------------------------------
+
+Bloque #2 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bf90 : 0x64de1833bf90 | 76 --> v |
+| 0x64de1833bf91 : 0x64de1833bf91 | 61 --> a |
+| 0x64de1833bf92 : 0x64de1833bf92 | 72 --> r |
+| 0x64de1833bf93 : 0x64de1833bf93 | 69 --> i |
+| 0x64de1833bf94 : 0x64de1833bf94 | 61 --> a |
+| 0x64de1833bf95 : 0x64de1833bf95 | 62 --> b |
+| 0x64de1833bf96 : 0x64de1833bf96 | 6c --> l |
+| 0x64de1833bf97 : 0x64de1833bf97 | 65 --> e |
+| 0x64de1833bf98 : 0x64de1833bf98 | 31 --> 1 |
+| 0x64de1833bf99 : 0x64de1833bf99 | 76 --> v |
+| 0x64de1833bf9a : 0x64de1833bf9a | 61 --> a |
+| 0x64de1833bf9b : 0x64de1833bf9b | 72 --> r |
+| 0x64de1833bf9c : 0x64de1833bf9c | 69 --> i |
+| 0x64de1833bf9d : 0x64de1833bf9d | 61 --> a |
+| 0x64de1833bf9e : 0x64de1833bf9e | 62 --> b |
+| 0x64de1833bf9f : 0x64de1833bf9f | 6c --> l |
+| 0x64de1833bfa0 : 0x64de1833bfa0 | 65 --> e |
+| 0x64de1833bfa1 : 0x64de1833bfa1 | 31 --> 1 |
+| 0x64de1833bfa2 : 0x64de1833bfa2 | 76 --> v |
+| 0x64de1833bfa3 : 0x64de1833bfa3 | 61 --> a |
+| 0x64de1833bfa4 : 0x64de1833bfa4 | 72 --> r |
+| 0x64de1833bfa5 : 0x64de1833bfa5 | 69 --> i |
+| 0x64de1833bfa6 : 0x64de1833bfa6 | 61 --> a |
+| 0x64de1833bfa7 : 0x64de1833bfa7 | 62 --> b |
+| 0x64de1833bfa8 : 0x64de1833bfa8 | 6c --> l |
+| 0x64de1833bfa9 : 0x64de1833bfa9 | 65 --> e |
+| 0x64de1833bfaa : 0x64de1833bfaa | 31 --> 1 |
+| 0x64de1833bfab : 0x64de1833bfab | 76 --> v |
+| 0x64de1833bfac : 0x64de1833bfac | 61 --> a |
+| 0x64de1833bfad : 0x64de1833bfad | 72 --> r |
+| 0x64de1833bfae : 0x64de1833bfae | 69 --> i |
+| 0x64de1833bfaf : 0x64de1833bfaf | 61 --> a |
+------------------------------------------------
+
+Bloque #3 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x64de1833bfb0 : 0x64de1833bfb0 | 76 --> v |
+| 0x64de1833bfb1 : 0x64de1833bfb1 | 61 --> a |
+| 0x64de1833bfb2 : 0x64de1833bfb2 | 72 --> r |
+| 0x64de1833bfb3 : 0x64de1833bfb3 | 69 --> i |
+| 0x64de1833bfb4 : 0x64de1833bfb4 | 61 --> a |
+| 0x64de1833bfb5 : 0x64de1833bfb5 | 62 --> b |
+| 0x64de1833bfb6 : 0x64de1833bfb6 | 6c --> l |
+| 0x64de1833bfb7 : 0x64de1833bfb7 | 65 --> e |
+| 0x64de1833bfb8 : 0x64de1833bfb8 | 31 --> 1 |
+| 0x64de1833bfb9 : 0x64de1833bfb9 | 76 --> v |
+| 0x64de1833bfba : 0x64de1833bfba | 61 --> a |
+| 0x64de1833bfbb : 0x64de1833bfbb | 72 --> r |
+| 0x64de1833bfbc : 0x64de1833bfbc | 69 --> i |
+| 0x64de1833bfbd : 0x64de1833bfbd | 61 --> a |
+| 0x64de1833bfbe : 0x64de1833bfbe | 62 --> b |
+| 0x64de1833bfbf : 0x64de1833bfbf | 6c --> l |
+| 0x64de1833bfc0 : 0x64de1833bfc0 | 65 --> e |
+| 0x64de1833bfc1 : 0x64de1833bfc1 | 31 --> 1 |
+| 0x64de1833bfc2 : 0x64de1833bfc2 | 76 --> v |
+| 0x64de1833bfc3 : 0x64de1833bfc3 | 61 --> a |
+| 0x64de1833bfc4 : 0x64de1833bfc4 | 72 --> r |
+| 0x64de1833bfc5 : 0x64de1833bfc5 | 69 --> i |
+| 0x64de1833bfc6 : 0x64de1833bfc6 | 61 --> a |
+| 0x64de1833bfc7 : 0x64de1833bfc7 | 62 --> b |
+| 0x64de1833bfc8 : 0x64de1833bfc8 | 6c --> l |
+| 0x64de1833bfc9 : 0x64de1833bfc9 | 65 --> e |
+| 0x64de1833bfca : 0x64de1833bfca | 31 --> 1 |
+| 0x64de1833bfcb : 0x64de1833bfcb | 76 --> v |
+| 0x64de1833bfcc : 0x64de1833bfcc | 61 --> a |
+| 0x64de1833bfcd : 0x64de1833bfcd | 72 --> r |
+| 0x64de1833bfce : 0x64de1833bfce | 69 --> i |
+| 0x64de1833bfcf : 0x64de1833bfcf | 61 --> a |
+------------------------------------------------
+

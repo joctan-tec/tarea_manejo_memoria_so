@@ -1,0 +1,11 @@
+Algoritmo Seleccionado: first_fit
+
+Memoria solicitada al sistema operativo: 128 bytes
+
+Operación: ALLOC, Variable: variable1, Tamaño: 35
+Variable variable1 asignada correctamente
+Variable variable1 asignada correctamente
+Operación: ALLOC, Variable: variable2, Tamaño: 128
+No se encontraron bloques libres contiguos para 128 bytes
+Error: Memoria insuficiente
+Error al asignar la variable variable2
