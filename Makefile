@@ -35,7 +35,7 @@ run:
 	@echo "Ejecutando programa con archivo de entrada: $(DEFAULT_INPUT) con algoritmo: $(algoritmo)"
 	# Ejecutar el programa con el archivo de entrada por defecto
 	gcc $(CFLAGS) -o $(EXEC) $(SRC_FILES)
-	./$(EXEC) $(DEFAULT_INPUT) $(algoritmo) > result_main.txt
+	./$(EXEC) $(DEFAULT_INPUT) $(algoritmo) > result_main.txt 2>&1
 
 # Ejecutar con un archivo de prueba especificado (si se pasa un argumento)
 test:
@@ -46,7 +46,7 @@ test:
 	    make run; \
 	else \
 	    echo "Ejecutando prueba con archivo: $(file)"; \
-	    ./$(EXEC) $(TEST_DIR)/$(file) $(algoritmo) > result_test_$(file).txt ; \
+	    ./$(EXEC) $(TEST_DIR)/$(file) $(algoritmo) > result_test_$(file).txt 2>&1 ; \
 	fi
 
 # Limpiar los archivos generados
@@ -62,4 +62,4 @@ temp:
 	@echo "Ejecutando programa con archivo de entrada: $(TEST_FILES)"
 	gcc $(CFLAGS) -o $(PRUEBAS) $(TEST_FILES)
 	# Ejecutar el programa con el archivo de entrada por defecto
-	./$(PRUEBAS) > result_temp.txt
+	./$(PRUEBAS) > result_temp.txt 2>&1

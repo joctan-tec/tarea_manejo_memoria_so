@@ -295,6 +295,7 @@ int alloc_function(MemoryBlock* current, int num_blocks, int char_size, HashMap*
     if (current == NULL) {
         printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
         // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
         return 1;
     }
 
@@ -319,6 +320,14 @@ int first_fit_alloc(char* variable,int size, MemoryList* memory_list, HashMap* a
     
     // Buscar los bloques libres necesarios
     MemoryBlock* start_block = find_free_blocks(num_blocks, memory_list);
+
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
+        return 1;
+    }
+
     return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
 
@@ -327,7 +336,11 @@ int first_fit_alloc(char* variable,int size, MemoryList* memory_list, HashMap* a
 
 int first_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
     // Obtener la dirección de memoria asignada a la variable
-    free_memory(variable, memory_list, assignments_map);
+    int result = free_memory(variable, memory_list, assignments_map);
+
+    if(result == 1){
+        return 1;
+    }
 
     //Cantidad de bloques necesarios
     int num_blocks = get_num_blocks(size);
@@ -365,14 +378,17 @@ MemoryBlock* find_best_fit_blocks(int num_blocks, MemoryList* memory_list) {
         current = current->next;
     }
 
-    printf("Best fit block: %p\n", best_fit_start->start_address);
 
     return best_fit_start;
 }
 
 int best_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
     // Obtener la dirección de memoria asignada a la variable
-    free_memory(variable, memory_list, assignments_map);
+    int result = free_memory(variable, memory_list, assignments_map);
+
+    if(result == 1){
+        return 1;
+    }
 
     // Cantidad de bloques necesarios
     int num_blocks = get_num_blocks(size);
@@ -391,6 +407,15 @@ int best_fit_alloc(char* variable, int size, MemoryList* memory_list, HashMap* a
     int char_size = size;
     // Buscar el mejor ajuste de bloques libres necesarios
     MemoryBlock* start_block = find_best_fit_blocks(num_blocks, memory_list);
+
+    
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
+        return 1;
+    }
+
     return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
 
@@ -432,13 +457,25 @@ int worst_fit_alloc(char* variable, int size, MemoryList* memory_list, HashMap* 
     int char_size = size;
     // Buscar el peor ajuste de bloques libres necesarios
     MemoryBlock* start_block = find_worst_fit_blocks(num_blocks, memory_list);
+
+    if (start_block == NULL) {
+        printf("No se encontraron bloques libres contiguos para %d bytes\n", char_size);
+        // Levantar error de memoria insuficiente
+        printf("Error: Memoria insuficiente\n");
+        return 1;
+    }
+
     return alloc_function(start_block, num_blocks, char_size, assignments_map, variable);
 }
 
 
 int worst_fit_realloc(char* variable, int size, MemoryList* memory_list, HashMap* assignments_map) {
     // Obtener la dirección de memoria asignada a la variable
-    free_memory(variable, memory_list, assignments_map);
+    int result = free_memory(variable, memory_list, assignments_map);
+
+    if(result == 1){
+        return 1;
+    }
     
     // Cantidad de bloques necesarios
     int num_blocks = get_num_blocks(size);
