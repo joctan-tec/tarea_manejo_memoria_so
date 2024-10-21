@@ -1,6 +1,6 @@
 # Simulación de Administración de Memoria en C 🖥️💾
 
-Este proyecto implementa un programa en C que simula la gestión dinámica de memoria utilizando las funciones `malloc`, `calloc`, `realloc` y `free`. Además, se implementan tres algoritmos de asignación de memoria: **Best-fit**, **First-fit** y **Worst-fit**, demostrando problemas como fragmentación de memoria y fugas de memoria.
+Este proyecto implementa un programa en C que simula la gestión dinámica de memoria utilizando las funciones `alloc`, `realloc` y `free`. Además, se implementan tres algoritmos de asignación de memoria: **Best-fit**, **First-fit** y **Worst-fit**, demostrando problemas como fragmentación de memoria y fugas de memoria.
 
 ## Descripción 📄
 
@@ -110,7 +110,7 @@ PRINT
 El proyecto está organizado de la siguiente manera:
 
 ```
-├── a.json
+.
 ├── algoritmos
 ├── input
 │   ├── input.mem

@@ -1,0 +1,337 @@
+Algoritmo Seleccionado: first_fit
+
+Memoria solicitada al sistema operativo: 128 bytes
+
+Operación: ALLOC, Variable: variable1, Tamaño: 64
+Variable variable1 asignada correctamente
+Variable variable1 asignada correctamente
+Operación: ALLOC, Variable: variable2, Tamaño: 32
+Variable variable2 asignada correctamente
+Variable variable2 asignada correctamente
+Operación: FREE, Variable: variable2
+Liberado 32 bytes en la dirección 0x60e975db9f90
+Variable variable2 liberada correctamente
+Operación: REALLOC, Variable: variable1, Tamaño: 128
+Liberado 32 bytes en la dirección 0x60e975db9f50
+Liberado 32 bytes en la dirección 0x60e975db9f70
+Variable variable1 asignada correctamente
+Variable variable1 reasignada correctamente
+Operación: PRINT
+Clave: variable1
+Direcciones:
+  - 0x60e975db9f50
+  - 0x60e975db9f70
+  - 0x60e975db9f90
+  - 0x60e975db9fb0
+
+Bloque #0 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9f50 : 0x60e975db9f50 | 76 --> v |
+| 0x60e975db9f51 : 0x60e975db9f51 | 61 --> a |
+| 0x60e975db9f52 : 0x60e975db9f52 | 72 --> r |
+| 0x60e975db9f53 : 0x60e975db9f53 | 69 --> i |
+| 0x60e975db9f54 : 0x60e975db9f54 | 61 --> a |
+| 0x60e975db9f55 : 0x60e975db9f55 | 62 --> b |
+| 0x60e975db9f56 : 0x60e975db9f56 | 6c --> l |
+| 0x60e975db9f57 : 0x60e975db9f57 | 65 --> e |
+| 0x60e975db9f58 : 0x60e975db9f58 | 31 --> 1 |
+| 0x60e975db9f59 : 0x60e975db9f59 | 76 --> v |
+| 0x60e975db9f5a : 0x60e975db9f5a | 61 --> a |
+| 0x60e975db9f5b : 0x60e975db9f5b | 72 --> r |
+| 0x60e975db9f5c : 0x60e975db9f5c | 69 --> i |
+| 0x60e975db9f5d : 0x60e975db9f5d | 61 --> a |
+| 0x60e975db9f5e : 0x60e975db9f5e | 62 --> b |
+| 0x60e975db9f5f : 0x60e975db9f5f | 6c --> l |
+| 0x60e975db9f60 : 0x60e975db9f60 | 65 --> e |
+| 0x60e975db9f61 : 0x60e975db9f61 | 31 --> 1 |
+| 0x60e975db9f62 : 0x60e975db9f62 | 76 --> v |
+| 0x60e975db9f63 : 0x60e975db9f63 | 61 --> a |
+| 0x60e975db9f64 : 0x60e975db9f64 | 72 --> r |
+| 0x60e975db9f65 : 0x60e975db9f65 | 69 --> i |
+| 0x60e975db9f66 : 0x60e975db9f66 | 61 --> a |
+| 0x60e975db9f67 : 0x60e975db9f67 | 62 --> b |
+| 0x60e975db9f68 : 0x60e975db9f68 | 6c --> l |
+| 0x60e975db9f69 : 0x60e975db9f69 | 65 --> e |
+| 0x60e975db9f6a : 0x60e975db9f6a | 31 --> 1 |
+| 0x60e975db9f6b : 0x60e975db9f6b | 76 --> v |
+| 0x60e975db9f6c : 0x60e975db9f6c | 61 --> a |
+| 0x60e975db9f6d : 0x60e975db9f6d | 72 --> r |
+| 0x60e975db9f6e : 0x60e975db9f6e | 69 --> i |
+| 0x60e975db9f6f : 0x60e975db9f6f | 61 --> a |
+------------------------------------------------
+
+Bloque #1 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9f70 : 0x60e975db9f70 | 76 --> v |
+| 0x60e975db9f71 : 0x60e975db9f71 | 61 --> a |
+| 0x60e975db9f72 : 0x60e975db9f72 | 72 --> r |
+| 0x60e975db9f73 : 0x60e975db9f73 | 69 --> i |
+| 0x60e975db9f74 : 0x60e975db9f74 | 61 --> a |
+| 0x60e975db9f75 : 0x60e975db9f75 | 62 --> b |
+| 0x60e975db9f76 : 0x60e975db9f76 | 6c --> l |
+| 0x60e975db9f77 : 0x60e975db9f77 | 65 --> e |
+| 0x60e975db9f78 : 0x60e975db9f78 | 31 --> 1 |
+| 0x60e975db9f79 : 0x60e975db9f79 | 76 --> v |
+| 0x60e975db9f7a : 0x60e975db9f7a | 61 --> a |
+| 0x60e975db9f7b : 0x60e975db9f7b | 72 --> r |
+| 0x60e975db9f7c : 0x60e975db9f7c | 69 --> i |
+| 0x60e975db9f7d : 0x60e975db9f7d | 61 --> a |
+| 0x60e975db9f7e : 0x60e975db9f7e | 62 --> b |
+| 0x60e975db9f7f : 0x60e975db9f7f | 6c --> l |
+| 0x60e975db9f80 : 0x60e975db9f80 | 65 --> e |
+| 0x60e975db9f81 : 0x60e975db9f81 | 31 --> 1 |
+| 0x60e975db9f82 : 0x60e975db9f82 | 76 --> v |
+| 0x60e975db9f83 : 0x60e975db9f83 | 61 --> a |
+| 0x60e975db9f84 : 0x60e975db9f84 | 72 --> r |
+| 0x60e975db9f85 : 0x60e975db9f85 | 69 --> i |
+| 0x60e975db9f86 : 0x60e975db9f86 | 61 --> a |
+| 0x60e975db9f87 : 0x60e975db9f87 | 62 --> b |
+| 0x60e975db9f88 : 0x60e975db9f88 | 6c --> l |
+| 0x60e975db9f89 : 0x60e975db9f89 | 65 --> e |
+| 0x60e975db9f8a : 0x60e975db9f8a | 31 --> 1 |
+| 0x60e975db9f8b : 0x60e975db9f8b | 76 --> v |
+| 0x60e975db9f8c : 0x60e975db9f8c | 61 --> a |
+| 0x60e975db9f8d : 0x60e975db9f8d | 72 --> r |
+| 0x60e975db9f8e : 0x60e975db9f8e | 69 --> i |
+| 0x60e975db9f8f : 0x60e975db9f8f | 61 --> a |
+------------------------------------------------
+
+Bloque #2 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9f90 : 0x60e975db9f90 | 76 --> v |
+| 0x60e975db9f91 : 0x60e975db9f91 | 61 --> a |
+| 0x60e975db9f92 : 0x60e975db9f92 | 72 --> r |
+| 0x60e975db9f93 : 0x60e975db9f93 | 69 --> i |
+| 0x60e975db9f94 : 0x60e975db9f94 | 61 --> a |
+| 0x60e975db9f95 : 0x60e975db9f95 | 62 --> b |
+| 0x60e975db9f96 : 0x60e975db9f96 | 6c --> l |
+| 0x60e975db9f97 : 0x60e975db9f97 | 65 --> e |
+| 0x60e975db9f98 : 0x60e975db9f98 | 31 --> 1 |
+| 0x60e975db9f99 : 0x60e975db9f99 | 76 --> v |
+| 0x60e975db9f9a : 0x60e975db9f9a | 61 --> a |
+| 0x60e975db9f9b : 0x60e975db9f9b | 72 --> r |
+| 0x60e975db9f9c : 0x60e975db9f9c | 69 --> i |
+| 0x60e975db9f9d : 0x60e975db9f9d | 61 --> a |
+| 0x60e975db9f9e : 0x60e975db9f9e | 62 --> b |
+| 0x60e975db9f9f : 0x60e975db9f9f | 6c --> l |
+| 0x60e975db9fa0 : 0x60e975db9fa0 | 65 --> e |
+| 0x60e975db9fa1 : 0x60e975db9fa1 | 31 --> 1 |
+| 0x60e975db9fa2 : 0x60e975db9fa2 | 76 --> v |
+| 0x60e975db9fa3 : 0x60e975db9fa3 | 61 --> a |
+| 0x60e975db9fa4 : 0x60e975db9fa4 | 72 --> r |
+| 0x60e975db9fa5 : 0x60e975db9fa5 | 69 --> i |
+| 0x60e975db9fa6 : 0x60e975db9fa6 | 61 --> a |
+| 0x60e975db9fa7 : 0x60e975db9fa7 | 62 --> b |
+| 0x60e975db9fa8 : 0x60e975db9fa8 | 6c --> l |
+| 0x60e975db9fa9 : 0x60e975db9fa9 | 65 --> e |
+| 0x60e975db9faa : 0x60e975db9faa | 31 --> 1 |
+| 0x60e975db9fab : 0x60e975db9fab | 76 --> v |
+| 0x60e975db9fac : 0x60e975db9fac | 61 --> a |
+| 0x60e975db9fad : 0x60e975db9fad | 72 --> r |
+| 0x60e975db9fae : 0x60e975db9fae | 69 --> i |
+| 0x60e975db9faf : 0x60e975db9faf | 61 --> a |
+------------------------------------------------
+
+Bloque #3 Estado: Ocupado
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9fb0 : 0x60e975db9fb0 | 76 --> v |
+| 0x60e975db9fb1 : 0x60e975db9fb1 | 61 --> a |
+| 0x60e975db9fb2 : 0x60e975db9fb2 | 72 --> r |
+| 0x60e975db9fb3 : 0x60e975db9fb3 | 69 --> i |
+| 0x60e975db9fb4 : 0x60e975db9fb4 | 61 --> a |
+| 0x60e975db9fb5 : 0x60e975db9fb5 | 62 --> b |
+| 0x60e975db9fb6 : 0x60e975db9fb6 | 6c --> l |
+| 0x60e975db9fb7 : 0x60e975db9fb7 | 65 --> e |
+| 0x60e975db9fb8 : 0x60e975db9fb8 | 31 --> 1 |
+| 0x60e975db9fb9 : 0x60e975db9fb9 | 76 --> v |
+| 0x60e975db9fba : 0x60e975db9fba | 61 --> a |
+| 0x60e975db9fbb : 0x60e975db9fbb | 72 --> r |
+| 0x60e975db9fbc : 0x60e975db9fbc | 69 --> i |
+| 0x60e975db9fbd : 0x60e975db9fbd | 61 --> a |
+| 0x60e975db9fbe : 0x60e975db9fbe | 62 --> b |
+| 0x60e975db9fbf : 0x60e975db9fbf | 6c --> l |
+| 0x60e975db9fc0 : 0x60e975db9fc0 | 65 --> e |
+| 0x60e975db9fc1 : 0x60e975db9fc1 | 31 --> 1 |
+| 0x60e975db9fc2 : 0x60e975db9fc2 | 76 --> v |
+| 0x60e975db9fc3 : 0x60e975db9fc3 | 61 --> a |
+| 0x60e975db9fc4 : 0x60e975db9fc4 | 72 --> r |
+| 0x60e975db9fc5 : 0x60e975db9fc5 | 69 --> i |
+| 0x60e975db9fc6 : 0x60e975db9fc6 | 61 --> a |
+| 0x60e975db9fc7 : 0x60e975db9fc7 | 62 --> b |
+| 0x60e975db9fc8 : 0x60e975db9fc8 | 6c --> l |
+| 0x60e975db9fc9 : 0x60e975db9fc9 | 65 --> e |
+| 0x60e975db9fca : 0x60e975db9fca | 31 --> 1 |
+| 0x60e975db9fcb : 0x60e975db9fcb | 76 --> v |
+| 0x60e975db9fcc : 0x60e975db9fcc | 61 --> a |
+| 0x60e975db9fcd : 0x60e975db9fcd | 72 --> r |
+| 0x60e975db9fce : 0x60e975db9fce | 69 --> i |
+| 0x60e975db9fcf : 0x60e975db9fcf | 61 --> a |
+------------------------------------------------
+
+Operación: FREE, Variable: variable1
+Liberado 32 bytes en la dirección 0x60e975db9f50
+Liberado 32 bytes en la dirección 0x60e975db9f70
+Liberado 32 bytes en la dirección 0x60e975db9f90
+Liberado 32 bytes en la dirección 0x60e975db9fb0
+Variable variable1 liberada correctamente
+Operación: PRINT
+Bloque #0 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9f50 : 0x60e975db9f50 | 76 --> v |
+| 0x60e975db9f51 : 0x60e975db9f51 | 61 --> a |
+| 0x60e975db9f52 : 0x60e975db9f52 | 72 --> r |
+| 0x60e975db9f53 : 0x60e975db9f53 | 69 --> i |
+| 0x60e975db9f54 : 0x60e975db9f54 | 61 --> a |
+| 0x60e975db9f55 : 0x60e975db9f55 | 62 --> b |
+| 0x60e975db9f56 : 0x60e975db9f56 | 6c --> l |
+| 0x60e975db9f57 : 0x60e975db9f57 | 65 --> e |
+| 0x60e975db9f58 : 0x60e975db9f58 | 31 --> 1 |
+| 0x60e975db9f59 : 0x60e975db9f59 | 76 --> v |
+| 0x60e975db9f5a : 0x60e975db9f5a | 61 --> a |
+| 0x60e975db9f5b : 0x60e975db9f5b | 72 --> r |
+| 0x60e975db9f5c : 0x60e975db9f5c | 69 --> i |
+| 0x60e975db9f5d : 0x60e975db9f5d | 61 --> a |
+| 0x60e975db9f5e : 0x60e975db9f5e | 62 --> b |
+| 0x60e975db9f5f : 0x60e975db9f5f | 6c --> l |
+| 0x60e975db9f60 : 0x60e975db9f60 | 65 --> e |
+| 0x60e975db9f61 : 0x60e975db9f61 | 31 --> 1 |
+| 0x60e975db9f62 : 0x60e975db9f62 | 76 --> v |
+| 0x60e975db9f63 : 0x60e975db9f63 | 61 --> a |
+| 0x60e975db9f64 : 0x60e975db9f64 | 72 --> r |
+| 0x60e975db9f65 : 0x60e975db9f65 | 69 --> i |
+| 0x60e975db9f66 : 0x60e975db9f66 | 61 --> a |
+| 0x60e975db9f67 : 0x60e975db9f67 | 62 --> b |
+| 0x60e975db9f68 : 0x60e975db9f68 | 6c --> l |
+| 0x60e975db9f69 : 0x60e975db9f69 | 65 --> e |
+| 0x60e975db9f6a : 0x60e975db9f6a | 31 --> 1 |
+| 0x60e975db9f6b : 0x60e975db9f6b | 76 --> v |
+| 0x60e975db9f6c : 0x60e975db9f6c | 61 --> a |
+| 0x60e975db9f6d : 0x60e975db9f6d | 72 --> r |
+| 0x60e975db9f6e : 0x60e975db9f6e | 69 --> i |
+| 0x60e975db9f6f : 0x60e975db9f6f | 61 --> a |
+------------------------------------------------
+
+Bloque #1 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9f70 : 0x60e975db9f70 | 76 --> v |
+| 0x60e975db9f71 : 0x60e975db9f71 | 61 --> a |
+| 0x60e975db9f72 : 0x60e975db9f72 | 72 --> r |
+| 0x60e975db9f73 : 0x60e975db9f73 | 69 --> i |
+| 0x60e975db9f74 : 0x60e975db9f74 | 61 --> a |
+| 0x60e975db9f75 : 0x60e975db9f75 | 62 --> b |
+| 0x60e975db9f76 : 0x60e975db9f76 | 6c --> l |
+| 0x60e975db9f77 : 0x60e975db9f77 | 65 --> e |
+| 0x60e975db9f78 : 0x60e975db9f78 | 31 --> 1 |
+| 0x60e975db9f79 : 0x60e975db9f79 | 76 --> v |
+| 0x60e975db9f7a : 0x60e975db9f7a | 61 --> a |
+| 0x60e975db9f7b : 0x60e975db9f7b | 72 --> r |
+| 0x60e975db9f7c : 0x60e975db9f7c | 69 --> i |
+| 0x60e975db9f7d : 0x60e975db9f7d | 61 --> a |
+| 0x60e975db9f7e : 0x60e975db9f7e | 62 --> b |
+| 0x60e975db9f7f : 0x60e975db9f7f | 6c --> l |
+| 0x60e975db9f80 : 0x60e975db9f80 | 65 --> e |
+| 0x60e975db9f81 : 0x60e975db9f81 | 31 --> 1 |
+| 0x60e975db9f82 : 0x60e975db9f82 | 76 --> v |
+| 0x60e975db9f83 : 0x60e975db9f83 | 61 --> a |
+| 0x60e975db9f84 : 0x60e975db9f84 | 72 --> r |
+| 0x60e975db9f85 : 0x60e975db9f85 | 69 --> i |
+| 0x60e975db9f86 : 0x60e975db9f86 | 61 --> a |
+| 0x60e975db9f87 : 0x60e975db9f87 | 62 --> b |
+| 0x60e975db9f88 : 0x60e975db9f88 | 6c --> l |
+| 0x60e975db9f89 : 0x60e975db9f89 | 65 --> e |
+| 0x60e975db9f8a : 0x60e975db9f8a | 31 --> 1 |
+| 0x60e975db9f8b : 0x60e975db9f8b | 76 --> v |
+| 0x60e975db9f8c : 0x60e975db9f8c | 61 --> a |
+| 0x60e975db9f8d : 0x60e975db9f8d | 72 --> r |
+| 0x60e975db9f8e : 0x60e975db9f8e | 69 --> i |
+| 0x60e975db9f8f : 0x60e975db9f8f | 61 --> a |
+------------------------------------------------
+
+Bloque #2 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9f90 : 0x60e975db9f90 | 76 --> v |
+| 0x60e975db9f91 : 0x60e975db9f91 | 61 --> a |
+| 0x60e975db9f92 : 0x60e975db9f92 | 72 --> r |
+| 0x60e975db9f93 : 0x60e975db9f93 | 69 --> i |
+| 0x60e975db9f94 : 0x60e975db9f94 | 61 --> a |
+| 0x60e975db9f95 : 0x60e975db9f95 | 62 --> b |
+| 0x60e975db9f96 : 0x60e975db9f96 | 6c --> l |
+| 0x60e975db9f97 : 0x60e975db9f97 | 65 --> e |
+| 0x60e975db9f98 : 0x60e975db9f98 | 31 --> 1 |
+| 0x60e975db9f99 : 0x60e975db9f99 | 76 --> v |
+| 0x60e975db9f9a : 0x60e975db9f9a | 61 --> a |
+| 0x60e975db9f9b : 0x60e975db9f9b | 72 --> r |
+| 0x60e975db9f9c : 0x60e975db9f9c | 69 --> i |
+| 0x60e975db9f9d : 0x60e975db9f9d | 61 --> a |
+| 0x60e975db9f9e : 0x60e975db9f9e | 62 --> b |
+| 0x60e975db9f9f : 0x60e975db9f9f | 6c --> l |
+| 0x60e975db9fa0 : 0x60e975db9fa0 | 65 --> e |
+| 0x60e975db9fa1 : 0x60e975db9fa1 | 31 --> 1 |
+| 0x60e975db9fa2 : 0x60e975db9fa2 | 76 --> v |
+| 0x60e975db9fa3 : 0x60e975db9fa3 | 61 --> a |
+| 0x60e975db9fa4 : 0x60e975db9fa4 | 72 --> r |
+| 0x60e975db9fa5 : 0x60e975db9fa5 | 69 --> i |
+| 0x60e975db9fa6 : 0x60e975db9fa6 | 61 --> a |
+| 0x60e975db9fa7 : 0x60e975db9fa7 | 62 --> b |
+| 0x60e975db9fa8 : 0x60e975db9fa8 | 6c --> l |
+| 0x60e975db9fa9 : 0x60e975db9fa9 | 65 --> e |
+| 0x60e975db9faa : 0x60e975db9faa | 31 --> 1 |
+| 0x60e975db9fab : 0x60e975db9fab | 76 --> v |
+| 0x60e975db9fac : 0x60e975db9fac | 61 --> a |
+| 0x60e975db9fad : 0x60e975db9fad | 72 --> r |
+| 0x60e975db9fae : 0x60e975db9fae | 69 --> i |
+| 0x60e975db9faf : 0x60e975db9faf | 61 --> a |
+------------------------------------------------
+
+Bloque #3 Estado: Libre
+
+Dirección de memoria
+------------------------------------------------
+| 0x60e975db9fb0 : 0x60e975db9fb0 | 76 --> v |
+| 0x60e975db9fb1 : 0x60e975db9fb1 | 61 --> a |
+| 0x60e975db9fb2 : 0x60e975db9fb2 | 72 --> r |
+| 0x60e975db9fb3 : 0x60e975db9fb3 | 69 --> i |
+| 0x60e975db9fb4 : 0x60e975db9fb4 | 61 --> a |
+| 0x60e975db9fb5 : 0x60e975db9fb5 | 62 --> b |
+| 0x60e975db9fb6 : 0x60e975db9fb6 | 6c --> l |
+| 0x60e975db9fb7 : 0x60e975db9fb7 | 65 --> e |
+| 0x60e975db9fb8 : 0x60e975db9fb8 | 31 --> 1 |
+| 0x60e975db9fb9 : 0x60e975db9fb9 | 76 --> v |
+| 0x60e975db9fba : 0x60e975db9fba | 61 --> a |
+| 0x60e975db9fbb : 0x60e975db9fbb | 72 --> r |
+| 0x60e975db9fbc : 0x60e975db9fbc | 69 --> i |
+| 0x60e975db9fbd : 0x60e975db9fbd | 61 --> a |
+| 0x60e975db9fbe : 0x60e975db9fbe | 62 --> b |
+| 0x60e975db9fbf : 0x60e975db9fbf | 6c --> l |
+| 0x60e975db9fc0 : 0x60e975db9fc0 | 65 --> e |
+| 0x60e975db9fc1 : 0x60e975db9fc1 | 31 --> 1 |
+| 0x60e975db9fc2 : 0x60e975db9fc2 | 76 --> v |
+| 0x60e975db9fc3 : 0x60e975db9fc3 | 61 --> a |
+| 0x60e975db9fc4 : 0x60e975db9fc4 | 72 --> r |
+| 0x60e975db9fc5 : 0x60e975db9fc5 | 69 --> i |
+| 0x60e975db9fc6 : 0x60e975db9fc6 | 61 --> a |
+| 0x60e975db9fc7 : 0x60e975db9fc7 | 62 --> b |
+| 0x60e975db9fc8 : 0x60e975db9fc8 | 6c --> l |
+| 0x60e975db9fc9 : 0x60e975db9fc9 | 65 --> e |
+| 0x60e975db9fca : 0x60e975db9fca | 31 --> 1 |
+| 0x60e975db9fcb : 0x60e975db9fcb | 76 --> v |
+| 0x60e975db9fcc : 0x60e975db9fcc | 61 --> a |
+| 0x60e975db9fcd : 0x60e975db9fcd | 72 --> r |
+| 0x60e975db9fce : 0x60e975db9fce | 69 --> i |
+| 0x60e975db9fcf : 0x60e975db9fcf | 61 --> a |
+------------------------------------------------
+

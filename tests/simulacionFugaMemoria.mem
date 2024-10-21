@@ -1,0 +1,6 @@
+# Simulación de fuga de memoria
+ALLOC D 32
+ALLOC E 64
+# No liberamos D
+FREE E
+PRINT

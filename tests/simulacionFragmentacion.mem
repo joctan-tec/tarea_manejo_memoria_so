@@ -1,0 +1,6 @@
+# Simulación de fragmentación
+ALLOC A 32
+ALLOC B 64
+FREE A
+ALLOC C 32
+PRINT

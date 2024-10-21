@@ -1,8 +1,10 @@
-# Asignación de memoria para variable1
-ALLOC variable1 35         # Asignación exitosa
+# Asignación exitosa de memoria para variable1
+ALLOC variable1 35         
 
 # Intento de reasignar variable1 a un nuevo tamaño
-REALLOC variable1 128      # Fallo (no hay suficiente espacio contiguo)
+# Fallo (no hay suficiente espacio contiguo)
+REALLOC variable1 128      
 
 # Intento de asignar variable3
-ALLOC variable3 64         # Fallo (no hay suficiente memoria después de las asignaciones previas)
+# Fallo (no hay suficiente memoria después de las asignaciones previas)
+ALLOC variable3 64         
